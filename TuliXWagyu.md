@@ -85,7 +85,7 @@ I also did not notice anything strange from the original meryl files of the moth
 
 **QV Merqury**
 
-Hapmers for the assembly did not separate nicely.
+Hapmers for the Tuli x Wagyu assembly did not separate nicely.
 
 Tuli X Wagyu hapmer blobs | Angus X Brahman hapmer blobs
 ----------|-----------
