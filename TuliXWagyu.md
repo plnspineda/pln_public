@@ -30,6 +30,26 @@ This is for the previous Angus x Brahamn hapmer dbs
         10G	shrd.inherited.gt5.meryl
         432M	Sire_truncated.inherited.gt2.meryl
 
+meryl filtered kmers with frequency less than 65 therefore the few number of mother hapmers. Below is the number of remaining kmers for each parents after filtering.
+
+        (base) [a1812753@l01 hapmer-dbs]$ singularity exec /apps/containers/merqury_v1.3.sif meryl statistics mother_not_father.gt65.meryl | head
+
+        Found 1 command tree.
+        Number of 21-mers that are:
+          unique                      0  (exactly one instance of the kmer is in the input)
+          distinct                60870  (non-redundant kmer sequences in the input)
+          present               9737439  (...)
+          missing         4398046450234  (non-redundant kmer sequences not in the input)
+
+          (base) [a1812753@l01 hapmer-dbs]$ singularity exec /apps/containers/merqury_v1.3.sif meryl statistics father_not_mother.gt5.meryl/ | head
+
+        Found 1 command tree.
+        Number of 21-mers that are:
+          unique                      0  (exactly one instance of the kmer is in the input)
+          distinct            100258031  (non-redundant kmer sequences in the input)
+          present            1675959122  (...)
+          missing         4397946253073  (non-redundant kmer sequences not in the input)
+
 
 father_not_mother kmers | mother_not_father kmers | zoom-in mother_not_father kmers (60-70)
 ----------|-----------|--------------------
