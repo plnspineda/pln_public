@@ -30,7 +30,7 @@ This is for the previous Angus x Brahamn hapmer dbs
         10G	shrd.inherited.gt5.meryl
         432M	Sire_truncated.inherited.gt2.meryl
 
-meryl filtered kmers with frequency less than 65 therefore the few number of mother hapmers. Below is the number of remaining kmers for each parents after filtering.
+meryl filtered kmers with frequency less than 65 thus the few mother hapmers. Below is the number of remaining kmers for each parents after filtering.
 
         (base) [a1812753@l01 hapmer-dbs]$ singularity exec /apps/containers/merqury_v1.3.sif meryl statistics mother_not_father.gt65.meryl | head
 
@@ -51,11 +51,13 @@ meryl filtered kmers with frequency less than 65 therefore the few number of mot
           missing         4397946253073  (non-redundant kmer sequences not in the input)
 
 
+this is the number of k-mers for parental only meryl (hapmers not filtered yet and with no F1 yet).
+
 father_not_mother kmers | mother_not_father kmers | zoom-in mother_not_father kmers (60-70)
 ----------|-----------|--------------------
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_father_not_mother.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father_zoomin.histo.png" width="400" /> red arrow indicates the detected "peak"
 
-this is the number of k-mers for parental only meryl (hapmers with no F1 yet). This is the data wherein the .hist file from the above table and plot was derived. seems normal.
+Below is the data wherein the .hist file from the above table and plot was derived.
 
 `father_not_mother.meryl`
 
