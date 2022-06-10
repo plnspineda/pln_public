@@ -33,7 +33,7 @@ This is for the previous Angus x Brahamn hapmer dbs
 
 father_not_mother kmers | mother_not_father kmers | zoom-in mother_not_father kmers (60-70)
 ----------|-----------|--------------------
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_father_not_mother.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father_zoomin.histo.png" width="450" /> red arrow indicates that detected "peak"
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_father_not_mother.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father.histo.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/Rplot_mother_not_father_zoomin.histo.png" width="450" /> red arrow indicates the detected "peak"
 
 this is the number of k-mers for parental only meryl (hapmers with no F1 yet). This is the data wherein the .hist file from the above table and plot was derived. seems normal.
 
