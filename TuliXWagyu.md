@@ -111,7 +111,7 @@ Tuli X Wagyu hapmer blobs | Angus X Brahman hapmer blobs
 
 QV Merqury result location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/QV_estimation/merqury-gt5
 
-This the result when filtering for the wagyu meryl short read is set to less than 5.
+This is the result when filtering for the wagyu meryl short read is set to less than 5.
 
           (base) [a1812753@l01 mother-gt5-hapmer]$ du -sh *inherited.gt*
           382M	father.inherited.gt7.meryl
