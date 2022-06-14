@@ -106,3 +106,29 @@ Hapmers for the Tuli x Wagyu assembly did not separate nicely.
 Tuli X Wagyu hapmer blobs | Angus X Brahman hapmer blobs
 ----------|-----------
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/3.QV.hapmers.blob.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/3.shasta.hapmers.blob.png" width="450" />
+
+## setting the first filter manually
+
+QV Merqury result location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/QV_estimation/merqury-gt5
+
+This the result when filtering for the wagyu meryl short read is set to less than 5.
+
+          (base) [a1812753@l01 mother-gt5-hapmer]$ du -sh *inherited.gt*
+          382M	father.inherited.gt7.meryl
+          283M	mother.inherited.gt6.meryl
+          11G	shrd.inherited.gt10.meryl
+
+(for context, filtering for kmers are done twice. First is after getting the hapmers, and then second after getting the inherited hapmers)
+
+first filter
+- father <5
+- mother <5 *manually set
+
+second filter
+- father <7
+- mother <6
+- shared <10
+
+Tuli X Wagyu hapmer blob (filter < 5)
+----------|-----------
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/gt5-QV.hapmers.blob.png" width="450" />
