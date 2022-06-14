@@ -130,5 +130,4 @@ second filter
 - shared <10
 
 Tuli X Wagyu hapmer blob (filter < 5)
-----------|-----------
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/gt5-QV.hapmers.blob.png" width="450" />
