@@ -121,13 +121,14 @@ This the result when filtering for the wagyu meryl short read is set to less tha
 (for context, filtering for kmers are done twice. First is after getting the hapmers, and then second after getting the inherited hapmers)
 
 first filter
-- father <5
-- mother <5 *manually set
+- father < 5
+- mother < 5 *manually set
 
 second filter
-- father <7
-- mother <6
-- shared <10
+- father < 7
+- mother < 6
+- shared < 10
 
 Tuli X Wagyu hapmer blob (filter < 5)
+
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/gt5-QV.hapmers.blob.png" width="450" />
