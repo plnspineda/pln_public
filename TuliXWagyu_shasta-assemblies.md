@@ -38,10 +38,6 @@ Spectra of assemblies (stacked)
 Switch-blocks (number of switches: 100, short-range: 20,000\
   switch=100 and range=20000 allows 0.5% of switches in ~20kb window
 
-| Tuli_v10_1Krl | Tuli_v10_5Krl | Tuli_v10_10Krl|
-|---------------------|---------------------|---------------------|
-|<img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Tuliv10rl1000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl5k-QV.Tuliv10rl5000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl10k-QV.Tuliv10rl10000.block.N.png" width="450" /> |
-
-| Wagyu_v10_1Krl | Wagyu_v10_5Krl | Wagyu_v10_10Krl|
-|---------------------|---------------------|---------------------|
-|<img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Wagyuv10rl1000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl5k-QV.Wagyuv10rl5000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl10k-QV.Wagyuv10rl10000.block.N.png" width="450" /> |
+| Tuli_v10_1Krl | Tuli_v10_1Krl (continuity)|
+|---------------------|---------------------|
+|
