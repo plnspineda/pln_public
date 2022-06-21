@@ -17,11 +17,11 @@ Table. Summary of assemblies statistics using Quast and Merqury
 
 
 Notes:
-- Lowest number of contigs is 1Krl
-- Largest N50 is Tuli_v10_5Krl and Wagyu_v10_1Krl
-- Highest QV is Tuli_v10_1Krl and Wagyu_v10_1Krl
-- Highest K-mer completeness is Tuli_v10_10Krl and Wagyu_v10_1Krl
-- Lowest switch-error rate is Tuli_v10_1Krl and Wagyu_v10_1Krl
+- Lowest number of contigs: 1Krl
+- Largest N50: Tuli_v10_5Krl and Wagyu_v10_1Krl
+- Highest QV: Tuli_v10_1Krl and Wagyu_v10_1Krl
+- Highest K-mer completeness: Tuli_v10_10Krl and Wagyu_v10_1Krl
+- Lowest switch-error rate: Tuli_v10_1Krl and Wagyu_v10_1Krl
 
 Hapmer blobs for each assemblies
 
