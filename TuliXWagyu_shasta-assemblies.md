@@ -35,7 +35,7 @@ Spectra of assemblies (stacked)
 |---------------------|---------------------|---------------------|
 |<img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.spectra-asm.st.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl5k-QV.spectra-asm.st.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl10k-QV.spectra-asm.st.png" width="450" /> |
 
-Switch-blocks (number of switches: 100, short-range: 20,000\
+Switch-blocks (number of switches: 100, short-range: 20,000)\
   switch=100 and range=20000 allows 0.5% of switches in ~20kb window
 
 | Tuli_v10_1Krl (blocks) | Tuli_v10_1Krl (continuity)|
