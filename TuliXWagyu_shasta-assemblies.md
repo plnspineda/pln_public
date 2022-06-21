@@ -27,4 +27,4 @@ Hapmer blobs for each assemblies
 
 | TulixWagyu_v10_1Krl | TulixWagyu_v10_5Krl | TulixWagyu_v10_10Krl|
 |---------------------|---------------------|---------------------|
-|
+|<img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.hapmers.blob.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl5k-QV.hapmers.blob.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl10k-QV.hapmers.blob.png" width="450" /> |
