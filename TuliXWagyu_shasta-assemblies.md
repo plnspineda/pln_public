@@ -38,6 +38,23 @@ Spectra of assemblies (stacked)
 Switch-blocks (number of switches: 100, short-range: 20,000\
   switch=100 and range=20000 allows 0.5% of switches in ~20kb window
 
-| Tuli_v10_1Krl | Tuli_v10_1Krl (continuity)|
+| Tuli_v10_1Krl (blocks) | Tuli_v10_1Krl (continuity)|
 |---------------------|---------------------|
-|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Tuliv10rl1000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Tuliv10rl1000.continuity.N.png" width="450" /> |
+
+| Wagyu_v10_1Krl (blocks) | Wagyu_v10_1Krl (continuity)|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Wagyuv10rl1000.block.N.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/rl1k-QV.Wagyuv10rl1000.continuity.N.png" width="450" /> |
+
+Table. Switch-rate errors statistics
+
+| Assembly       | Number of blocks | Total bases in blocks (block sum) | Smallest block size | Avg. Block size | Block N50 size | Longest block size | Num. of markers from other haplotype | total num. of markers in block | Switch-error rate |
+|----------------|------------------|-----------------------------------|---------------------|-----------------|----------------|--------------------|--------------------------------------|--------------------------------|-------------------|
+| Tuli_v9_10Krl  | 1941             | 2566722393                        | 22                  | 1322371         | 19046386       | 59902359           | 132461                               | 67747289                       | 0.195522%         |
+| Tuli_v10_1Kr   | 1768             | 2552926411                        | 22                  | 1443963         | 19881514       | 87365924           | 129821                               | 66973108                       | 0.19384%          |
+| Tuli_v10_5Kr   | 1885             | 2558183351                        | 22                  | 1357127         | 19302345       | 70522016           | 130442                               | 67086067                       | 0.19444%          |
+| Tuli_v10_10Kr  | 1947             | 2566432330                        | 22                  | 1318147         | 18301306       | 70488106           | 131779                               | 67741037                       | 0.194533%         |
+| Wagyu_v9_10Krl | 2331             | 2666971482                        | 22                  | 1144132         | 9628018        | 35850846           | 199975                               | 47288053                       | 0.422887%         |
+| Wagyu_v10_1Kr  | 2166             | 2662155664                        | 22                  | 1229066         | 10101723       | 56098866           | 195991                               | 47231661                       | 0.414957%         |
+| Wagyu_v10_5Kr  | 2239             | 2665466786                        | 22                  | 1190472         | 10296890       | 56098977           | 199605                               | 47272786                       | 0.422241%         |
+| Wagyu_v10_10Kr | 2296             | 2666883035                        | 22                  | 1161535         | 9350663        | 56471284           | 199500                               | 47285958                       | 0.421901%         |
