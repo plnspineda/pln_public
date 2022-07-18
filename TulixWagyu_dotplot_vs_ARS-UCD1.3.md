@@ -8,7 +8,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes.png" width="1000" />
 
-| Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs |
+| Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs (Tuli) | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs (Wagyu) |
 |-----------:|---------------------------------------------:|---------------------------------------------:|------------------:|----------------------------------------------:|----------------------------------------------:|------------------:|
 |          1 |                                        99.20 |                                       100.81 |                 4 |                                         99.03 |                                        100.98 |                 5 |
 |          2 |                                       100.01 |                                        99.99 |                 1 |                                         99.87 |                                        100.13 |                 1 |
@@ -173,7 +173,10 @@ Prop_ref (Proportion reference) = query length / reference length
 | Prop_ref (%) = 100.57 | Prop_ref (%) = 72.12 |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22.png" width="550" /> |
 
-**Notes on Wagyu: contig_
+**Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes\
+Chromosome_21:1-30731993 (-)\
+Chromosome_22:30731993-49406441 (+)\
+but still has to check the positions since this is just based on mapping.
 
 | Tuli_Chromosome_23 | Wagyu_Chromosome_23|
 |---------------------|---------------------|
