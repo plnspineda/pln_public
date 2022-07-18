@@ -2,7 +2,7 @@
 
 Summary Notes:
 
-List and number of chromosomes with one contig making up all the chromosome.
+List and number of chromosomes with 1:1 contig-chromosome proportion.
 - Tuli => 13 contigs (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
 - Wagyu => 9 contigs (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
 
