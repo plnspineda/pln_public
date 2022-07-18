@@ -1,4 +1,10 @@
 
+Summary Notes:
+
+List and number of chromosomes with one contig making up all the chromosome.
+- Tuli => 13 (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
+- Wagyu => 9 (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
+
 Computation:
         Prop_ref (Proportion reference) = query length / reference length
 
