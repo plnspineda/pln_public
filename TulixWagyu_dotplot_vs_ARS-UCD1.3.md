@@ -186,5 +186,5 @@ Prop_ref (Proportion reference) = query length / reference length
 
 | Tuli_Chromosome_Y_vs_UOA_Angus_1 | Wagyu_Chromosome_X_vs_ARS-UCD1.3
 |----------------------------------|---------------------------------|
-| 4 contigs |
+| 4 contigs, 52.68, 0.76, 8.23, 8.14 | 49 contigs |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_Y_vs_Angus.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_vs_ARS-UCD1.3.png" width="550" /> |
