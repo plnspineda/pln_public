@@ -1,3 +1,4 @@
+# Tuli x Wagyu dotplot against ARS-UCD1.3
 
 Summary Notes:
 
@@ -5,8 +6,7 @@ List and number of chromosomes with one contig making up all the chromosome.
 - Tuli => 13 (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
 - Wagyu => 9 (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
 
-Computation:
-        Prop_ref (Proportion reference) = query length / reference length
+Prop_ref (Proportion reference) = query length / reference length
 
 | Tuli_Chromosome_1 | Wagyu_Chromosome_1|
 |---------------------|---------------------|
@@ -183,3 +183,8 @@ Computation:
 | 11 contig | 4 contigs |
 | Prop_ref (%) = 0.13, 0.06, 0.01, 10.71, 0.01, 0.23, 0.15, 0.11, 0.25, 0.08, 89.16 | Prop_ref (%) = 11.23, 0.66, 87.17, 2.08 |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+
+Tuli_Chromosome_Y_vs_UOA_Angus_1
+
+4 contigs
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_Y_vs_Angus.png" width="550" />
