@@ -6,7 +6,7 @@ List and number of chromosomes with one contig making up all the chromosome.
 - Tuli => 13 (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
 - Wagyu => 9 (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes.png" width="550" />
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes.png" width="1000" />
 
 | Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) |
 |-----------:|---------------------------------------------:|---------------------------------------------:|----------------------------------------------:|----------------------------------------------:|
