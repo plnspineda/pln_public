@@ -10,7 +10,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes.png" width="1000" />
 
-| Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs (Tuli) | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs (Wagyu) |
+| Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs |
 |-----------:|---------------------------------------------:|---------------------------------------------:|------------------:|----------------------------------------------:|----------------------------------------------:|------------------:|
 |          1 |                                        99.20 |                                       100.81 |                 4 |                                         99.03 |                                        100.98 |                 5 |
 |          2 |                                       100.01 |                                        99.99 |                 1 |                                         99.87 |                                        100.13 |                 1 |
@@ -41,6 +41,8 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 |         27 |                                       100.23 |                                        99.77 |                 1 |                                         98.90 |                                        101.12 |                 2 |
 |         28 |                                        99.90 |                                       100.10 |                 4 |                                        100.88 |                                         99.13 |                 1 |
 |         29 |                                       100.64 |                                        99.36 |                11 |                                        101.13 |                                         98.88 |                 4 |
+|            |                                              |                                              | 88                |                                               |                                               | 93                |
+
 
 Prop_ref (Proportion reference) = query length / reference length
 
