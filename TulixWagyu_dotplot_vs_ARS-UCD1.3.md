@@ -6,7 +6,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 - Tuli => 13 contigs (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
 - Wagyu => 9 contigs (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
 
-**Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes and was split to include for both chromosomes
+**Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes and was split to be included to both chromosomes
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes_withsexchr.png" />
 
