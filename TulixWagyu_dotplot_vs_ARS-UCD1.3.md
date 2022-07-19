@@ -42,7 +42,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 |         28 |                                        99.90 |                                       100.10 |                 4 |                                        100.88 |                                         99.13 |                 1 |
 |         29 |                                       100.64 |                                        99.36 |                11 |                                        101.13 |                                         98.88 |                 4 |
 |      X / Y |                                        69.80 |                                       143.26 |                 4 |                                         97.52 |                                        102.55 |                49 |
-|            |                                              |                          TOTAL CONTIGS       | 88                |                                               |                         TOTAL CONTIGS         | 93                |
+|            |                                              |                          TOTAL CONTIGS       | 92                |                                               |                         TOTAL CONTIGS         | 142                |
 
 
 Prop_ref (Proportion reference) = query length / reference length
