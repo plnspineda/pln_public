@@ -167,21 +167,21 @@ Prop_ref (Proportion reference) = query length / reference length
 | Prop_ref (%) = 0.03, 0.04, 98.48 | Prop_ref (%) = 98.41, 1.22 |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_20.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_20.png" width="550" /> |
 
-| Tuli_Chromosome_21 | Wagyu_Chromosome_21 **|
-|---------------------|---------------------|
-| 10 contigs | 8 contigs |
-| Prop_ref (%) = 0.03, 0.02, 0.02, 0.03, 0.17, 0.12, 3.37, 31.89, 64.90, 0.07 | Prop_ref (%) = 0.02, 0.05, 0.02, 0.22, 0.17, 70.7, 0.09, 52.84 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_21.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_21.png" width="550" /> |
+| Tuli_Chromosome_21 | Wagyu_Chromosome_21 **| Wagyu_chromosome_21-split |
+|---------------------|---------------------|----------------------------|
+| 10 contigs | 8 contigs | 8 contigs (1 contig is split) |
+| Prop_ref (%) = 0.03, 0.02, 0.02, 0.03, 0.17, 0.12, 3.37, 31.89, 64.90, 0.07 | Prop_ref (%) = 0.02, 0.05, 0.02, 0.22, 0.17, 70.7, 0.09, 52.84 | ?44.95? |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_21.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_21.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_21-break.png" width="550" /> |
 
-| Tuli_Chromosome_22 | Wagyu_Chromosome_22 **|
-|---------------------|---------------------|
-| 1 contig | 1 contig |
-| Prop_ref (%) = 100.57 | Prop_ref (%) = 72.12 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22.png" width="550" /> |
+| Tuli_Chromosome_22 | Wagyu_Chromosome_22 **| Wagyu_Chromosome_22-merge |
+|---------------------|---------------------|----------------------------|
+| 1 contig | 1 contig | 2 contigs (1 contig was broken and merged here)
+| Prop_ref (%) = 100.57 | Prop_ref (%) = 72.12 | |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22-merge.png" width="550" /> |
 
 **Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes\
 Chromosome_21:1-30731993 (-)\
-Chromosome_22:30731993-49406441 (+)\
+Chromosome_22:30731994-49406441 (+)\
 but still has to check the positions since this is just based on mapping.
 
 | Tuli_Chromosome_23 | Wagyu_Chromosome_23|
