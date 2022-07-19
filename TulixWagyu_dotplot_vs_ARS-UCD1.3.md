@@ -180,8 +180,8 @@ Prop_ref (Proportion reference) = query length / reference length
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22-merge.png" width="550" /> |
 
 **Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes\
-Chromosome_21:1-30731993 (-)\
-Chromosome_22:30731994-49406441 (+)\
+Chromosome_21:1-32406303 (-)\
+Chromosome_22:32406304-49406441 (+)\
 but still has to check the positions since this is just based on mapping.
 
 | Tuli_Chromosome_23 | Wagyu_Chromosome_23|
