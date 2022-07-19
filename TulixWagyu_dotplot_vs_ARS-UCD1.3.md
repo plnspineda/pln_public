@@ -6,7 +6,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 - Tuli => 13 contigs (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
 - Wagyu => 9 contigs (Chromosomes 2, 3, 10, 14, 15, 16, 25, 26, 28)
 
-**Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes, and was only included in Chromosome_21 (didn't split yet) thus the large size of Chromosome_21 and short size of Chromosome_22 of the graph below in Wagyu assembly.
+**Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes and was split to include for both chromosomes
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes_withsexchr.png" />
 
@@ -32,8 +32,8 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 |         18 |                                       100.08 |                                        99.92 |                 1 |                                        100.02 |                                         99.98 |                 4 |
 |         19 |                                       100.16 |                                        99.84 |                 4 |                                         99.64 |                                        100.37 |                 5 |
 |         20 |                                        98.51 |                                       101.51 |                 3 |                                         99.63 |                                        100.38 |                 2 |
-|         21 |                                       100.54 |                                        99.46 |                10 |                                        124.14 |                                         80.56 |                 8 |
-|         22 |                                       100.57 |                                        99.43 |                 1 |                                         72.12 |                                        138.66 |                 1 |
+|         21 |                                       100.54 |                                        99.46 |                10 |                                         99.80 |                                        100.20 |                 8 |
+|         22 |                                       100.57 |                                        99.43 |                 1 |                                        100.09 |                                         99.91 |                 2 |
 |         23 |                                       102.68 |                                        97.39 |                 5 |                                        101.81 |                                         98.22 |                 2 |
 |         24 |                                       100.99 |                                        99.02 |                 1 |                                        100.57 |                                         99.43 |                 8 |
 |         25 |                                        99.93 |                                       100.07 |                 1 |                                        100.07 |                                         99.93 |                 1 |
