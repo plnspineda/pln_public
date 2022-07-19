@@ -8,7 +8,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 
 **Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes, and was only included in Chromosome_21 (didn't split yet) thus the large size of Chromosome_21 and short size of Chromosome_22 of the graph below in Wagyu assembly.
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes_withsexchr.png" width="1000" />
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes_withsexchr.png" width="900" />
 
 | Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs |
 |-----------:|---------------------------------------------:|---------------------------------------------:|------------------:|----------------------------------------------:|----------------------------------------------:|------------------:|
