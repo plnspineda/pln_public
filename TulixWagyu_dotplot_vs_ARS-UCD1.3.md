@@ -224,7 +224,7 @@ but still has to check the positions since this is just based on mapping.
 |---------------------|---------------------|
 | 1 contig | 1 contig |
 | Prop_ref (%) = 99.62 | Prop_ref (%) = 99.51 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/.images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
 
 | Tuli_Chromosome_27 | Wagyu_Chromosome_27|
 |---------------------|---------------------|
@@ -251,6 +251,8 @@ but still has to check the positions since this is just based on mapping.
 
 ## Improvement on Chromosome_X and Y <a name="chromosomeXY"></a>
 
+file_location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/TW_vs_ARS-UCD/dot_plot/Wagyu_final/Chromosome_X_v2
+
 | Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
 |----------------------------------|---------------------------------|
 | 50 contigs (104.08%) | 50 contigs (99.03%) |
@@ -259,3 +261,12 @@ but still has to check the positions since this is just based on mapping.
 **I just stitched contig56 which was not included in the previous image. It got filtered out although it maps 6.56% to the Chromosome_X\
 **total proportion = 104.08% | 99.03%
 **contig 194 and 834 (2.25% and 0.09%) was the inverted in Wagyu_Chromosome_X_vs_UOA_Brahman_1
+
+file location:
+
+Charolais X is probably only 1 contig which is haplotype1-0000042 (determined using winnowmap)
+
+| ARSUCD1.3_Chromosome_X_vs_Charolais | Wagyu_Chromosome_X_vs_Charolais
+|----------------------------------|---------------------------------|
+| 50 contigs (104.08%) | 50 contigs (99.03%) |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X_v2.fasta0.png" width="550" /> |
