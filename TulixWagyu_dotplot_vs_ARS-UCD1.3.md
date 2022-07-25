@@ -270,3 +270,6 @@ Charolais X is probably only 1 contig which is haplotype1-0000042 (determined us
 |----------------------------------|---------------------------------|
 | 50 contigs (104.08%) | 50 contigs (99.03%) |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X_v2.fasta0.png" width="550" /> |
+
+Brahman_Chromosome_X_vs_Charolais
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_UOA_Brahman_Chromosome_X0.png" width="550" />
