@@ -238,12 +238,13 @@ but still has to check the positions since this is just based on mapping.
 | 4 contigs, 52.68, 0.76, 8.23, 8.14 | 49 contigs |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_Y_vs_Angus.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_vs_ARS-UCD1.3.png" width="550" /> |
 
-## Improvement on Chromosome_X
+## Improvement on Chromosome_X and Y
 
 | Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
 |----------------------------------|---------------------------------|
-| 50 contigs (104.08%) | 50 contigs () |
+| 50 contigs (104.08%) | 50 contigs (99.03%) |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2_Brahman.png" width="550" /> |
 
 **I just stitched contig56 which was not included in the previous image. It got filtered out although it maps 6.56% to the Chromosome_X\
 **total proportion = 104.08% | 99.03%
+**contig 194 and 834 (2.25% and 0.09%) was the inverted in Wagyu_Chromosome_X_vs_UOA_Brahman_1
