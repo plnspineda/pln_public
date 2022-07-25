@@ -187,9 +187,9 @@ but still has to check the positions since this is just based on mapping.
 | Wagyu_Chromosome_21_10Krl | Wagyu_Chromosome_21_10Krl|
 |---------------------|---------------------|
 | 5 contigs | 2 contigs |
-| Prop_ref (%) = 0.06, 0.37, 0.09, 46.18, 52.90 (total = 99.51) | Prop_ref (%) = 28.09, 72.09 (total = 100.18) |
+| Prop_ref (%) = 0.06, 0.37, 0.09, 46.18, 52.90 | Prop_ref (%) = 28.09, 72.09  |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_21_10Krl.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22_10Krl.png" width="550" /> |
-**This is the dot plot for Wagyu Chromosome 21 and 22 with the 10K read length assembly. Contigs mapped accordingly.
+**This is the dot plot for Wagyu Chromosome 21 (total proportion = 99.51) and 22 (total proportion = 100.18) with the 10K read length assembly. Contigs mapped accordingly.
 
 | Tuli_Chromosome_23 | Wagyu_Chromosome_23|
 |---------------------|---------------------|
@@ -238,8 +238,10 @@ but still has to check the positions since this is just based on mapping.
 | 4 contigs, 52.68, 0.76, 8.23, 8.14 | 49 contigs |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_Y_vs_Angus.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_vs_ARS-UCD1.3.png" width="550" /> |
 
-| Wagyu_Chromosome_X_vs_ARS-UCD1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
+| Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
 |----------------------------------|---------------------------------|
-| 50 contigs | 95 contigs |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_vs_Brahman.png" width="550" /> |
-**I just stitched contig56 which was not included in the previous image. It got filtered out although it maps 6.56% to the Chromosome_X
+| 50 contigs (104.08%) | 50 contigs () |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2_Brahman.png" width="550" /> |
+
+**I just stitched contig56 which was not included in the previous image. It got filtered out although it maps 6.56% to the Chromosome_X\
+**total proportion = 104.08% |
