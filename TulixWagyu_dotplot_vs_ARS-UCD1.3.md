@@ -1,6 +1,11 @@
 # Tuli x Wagyu dotplot against ARS-UCD1.3
 
-Summary Notes:
+1. [Summary Notes](#summary)
+2. [Dotplot per chromosomes](#dotplot)
+- [Chromosome 21 and 22](#chr21_22)
+3. [Improving/Correcting Chromosome X and Y](#chromosomeXY)
+
+[Summary Notes:](#summary)
 
 List and number of chromosomes with 1:1 contig-chromosome proportion.
 - Tuli => 13 contigs (Chromosomes 2, 3, 7, 9, 10, 14, 17, 18, 22, 24, 25, 26, 27)
@@ -44,6 +49,7 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 |      X / Y |                                        69.80 |                                       143.26 |                 4 |                                         97.52 |                                        102.55 |                49 |
 |            |                                              |                          TOTAL CONTIGS       | 92                |                                               |                         TOTAL CONTIGS         | 142                |
 
+## [Dot plot per chromosomes](#dotplot)
 
 Prop_ref (Proportion reference) = query length / reference length
 
@@ -167,6 +173,7 @@ Prop_ref (Proportion reference) = query length / reference length
 | Prop_ref (%) = 0.03, 0.04, 98.48 | Prop_ref (%) = 98.41, 1.22 |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_20.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_20.png" width="550" /> |
 
+[Chromosome 21 and 22](#chr21_22)
 | Tuli_Chromosome_21 | Wagyu_Chromosome_21 **| Wagyu_chromosome_21-split |
 |---------------------|---------------------|----------------------------|
 | 10 contigs | 8 contigs | 8 contigs (1 contig is split) |
@@ -238,7 +245,7 @@ but still has to check the positions since this is just based on mapping.
 | 4 contigs, 52.68, 0.76, 8.23, 8.14 | 49 contigs |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_Y_vs_Angus.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_vs_ARS-UCD1.3.png" width="550" /> |
 
-## Improvement on Chromosome_X and Y
+## [Improvement on Chromosome_X and Y](#chromosomeXY)
 
 | Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
 |----------------------------------|---------------------------------|
