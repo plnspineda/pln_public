@@ -1,6 +1,7 @@
 # Tuli x Wagyu dotplot against ARS-UCD1.3
 
 1. [Summary Notes](#summary)
+    - [Proportion per chromosomes](#proportion)
 2. [Dotplot per chromosomes](#dotplot)
     - [Chromosome 21 and 22](#chr21_22)
 3. [Improving/Correcting Chromosome X and Y](#chromosomeXY)
@@ -14,6 +15,8 @@ List and number of chromosomes with 1:1 contig-chromosome proportion.
 **Notes on Wagyu Chromosome_21 and Chromosome_22: contig_28 mapped with both chromosomes and was split to be included to both chromosomes
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/comparison_chromosome_sizes_withsexchr.png" />
+
+<a name="proportion"></a>
 
 | Chromosome | Proportion of Tuli aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Tuli (%) | Number of contigs | Proportion of Wagyu aligned in ARS-UCD1.3 (%) | Proportion of ARS-UCD1.3 aligned in Wagyu (%) | Number of contigs |
 |-----------:|---------------------------------------------:|---------------------------------------------:|------------------:|----------------------------------------------:|----------------------------------------------:|------------------:|
@@ -191,11 +194,12 @@ Chromosome_21:1-32406303 (-)\
 Chromosome_22:32406304-49406441 (+)\
 but still has to check the positions since this is just based on mapping.
 
-| Wagyu_Chromosome_21_10Krl | Wagyu_Chromosome_21_10Krl|
+| Wagyu_Chromosome_21_10Krl | Wagyu_Chromosome_22_10Krl|
 |---------------------|---------------------|
 | 5 contigs | 2 contigs |
 | Prop_ref (%) = 0.06, 0.37, 0.09, 46.18, 52.90 | Prop_ref (%) = 28.09, 72.09  |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_21_10Krl.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_22_10Krl.png" width="550" /> |
+
 **This is the dot plot for Wagyu Chromosome 21 (total proportion = 99.51) and 22 (total proportion = 100.18) with the 10K read length assembly. Contigs mapped accordingly.
 
 | Tuli_Chromosome_23 | Wagyu_Chromosome_23|
