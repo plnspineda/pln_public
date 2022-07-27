@@ -284,21 +284,16 @@ file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chrom
 Wagyu Y is found at haplotype2-0001634\
 Nellore Y is found at X_N_shasta which is quite confusing since shoudn't it be at Y_N_shasta?
 
-
-Tuli assembly Y vs Wagyu Y
-
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Tuli_Chromosome_Y.fasta0.png" width="550" />
-
-
-Tuli assembly Y vs Nellore_X
-
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta.fna_Tuli_Chromosome_Y.fasta0.png" width="550" />
+| Tuli assembly Y vs Wagyu Y | Tuli assembly Y vs Nellore_X
+|----------------------------------|---------------------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Tuli_Chromosome_Y.fasta0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta.fna_Tuli_Chromosome_Y.fasta0.png" width="550" /> |
 
 
 Tully assembly Y vs Nellore_Y
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Y_N_shasta.fna_chrY_Tuli_asm.fasta0.png" width="550" />
 
-| Angus reference Y vs Wagyu Y | Angus reference Y vs Nellore Y
+
+| Angus reference Y vs Wagyu Y | Angus reference Y vs Nellore_X
 |----------------------------------|---------------------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Angus_Chromosome_Y.fna_X_N_shasta.fasta0.png" width="550" /> |
