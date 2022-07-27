@@ -251,6 +251,8 @@ but still has to check the positions since this is just based on mapping.
 
 ## Improvement on Chromosome_X and Y <a name="chromosomeXY"></a>
 
+#### Chromosome X
+
 file_location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/TW_vs_ARS-UCD/dot_plot/Wagyu_final/Chromosome_X_v2
 
 | Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
@@ -262,7 +264,7 @@ file_location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/TW_vs_ARS
 **total proportion = 104.08% | 99.03%
 **contig 194 and 834 (2.25% and 0.09%) was the inverted in Wagyu_Chromosome_X_vs_UOA_Brahman_1
 
-file location:
+file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_X
 
 Charolais X is probably only 1 contig which is haplotype1-0000042 (determined using winnowmap)
 
@@ -274,3 +276,10 @@ Charolais X is probably only 1 contig which is haplotype1-0000042 (determined us
 Brahman_Chromosome_X_vs_Charolais
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_UOA_Brahman_Chromosome_X0.png" width="550" />
+
+#### Chromosome Y
+
+file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y
+
+Wagyu Y is found at haplotype2-0001634\
+Nellore Y is found at X_N_shasta which is quite confusing since shoudn't it be at Y_N_shasta?
