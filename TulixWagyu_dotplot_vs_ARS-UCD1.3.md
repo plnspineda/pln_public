@@ -296,4 +296,4 @@ Tully assembly Y vs Nellore_Y
 
 | Angus reference Y vs Wagyu Y | Angus reference Y vs Nellore_X
 |----------------------------------|---------------------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta_Angus_Chromosome_Y0.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta_Angus_Chromosome_Y0.png" width="550" /> |
