@@ -303,6 +303,8 @@ Tully assembly Y vs Nelore_Y
 
 Y-chromosome is supposedly ~50Mb and we only usually get ~13Mb for the Y_chromosome. In T2T_Wagyu_Y, it could be two contigs which are **haplotype2-0001634 and haplotype2-0001654** since these two mapped well with the Y Angus.
 
+total length for the two contigs = 59500937bp \
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/winnowmap_Y_angus_vs_T2T_wagyu.png" width="550" />
 
 
 **Y-SNP markers alignment**
