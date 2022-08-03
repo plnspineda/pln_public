@@ -298,14 +298,18 @@ Tully assembly Y vs Nelore_Y
 |----------------------------------|---------------------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta_Angus_Chromosome_Y0.png" width="550" /> |
 
-##### Y-SNP markers alignment
+------------------------------------------------------------------------------------
+#### Finding Y-contigs
+
+**Y-SNP markers alignment**
 
 sam files can be found here:
 - [1373 SNP probe markers](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_y_snp_probes.sam)
 - [additional 4 SNP probe marker (longer sequence)](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_additional_Y_SNP_markers.fa.sam)
 - [summary of the SNPs filtered at MAPQ>25 (table below)](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_y_snp_probes_filteredQ25.tsv)
 
-**Summary of the contigs that has the SNP markers, filtered at MAPQ>25**
+**Summary of the contigs that has the SNP markers, filtered at MAPQ>25**\
+total length: 13795544 (excluding contig 40 because it's 50% of chromosome 23)
 
 | ref_name | MAPQ_ave | marker_count | contig_length | 50Mb_ref_proportion (%) | remarks          |
 |----------|:--------:|:------------:|--------------:|------------------------:|------------------|
