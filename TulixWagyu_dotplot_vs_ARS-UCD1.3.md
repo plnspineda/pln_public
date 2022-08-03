@@ -255,7 +255,7 @@ but still has to check the positions since this is just based on mapping.
 
 file_location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/TW_vs_ARS-UCD/dot_plot/Wagyu_final/Chromosome_X_v2
 
-| Wagyu_Chromosome_X_vs_ARS-UCDs1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
+| Wagyu_Chromosome_X_vs_ARS-UCD1.3 | Wagyu_Chromosome_X_vs_UOA_Brahman_1
 |----------------------------------|---------------------------------|
 | 50 contigs (104.08%) | 50 contigs (99.03%) |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_X_v2_Brahman.png" width="550" /> |
@@ -268,12 +268,12 @@ file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chrom
 
 Charolais X is probably only 1 contig which is haplotype1-0000042 (determined using winnowmap)
 
-| ARSUCD1.3_Chromosome_X_vs_Charolais | Wagyu_Chromosome_X_vs_Charolais
+| ARSUCD1.3_Chromosome_X_vs_T2T_Charolais | Wagyu_Chromosome_X_vs_T2T_Charolais
 |----------------------------------|---------------------------------|
 | 50 contigs (104.08%) | 50 contigs (99.03%) |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_Chromosome_X_v2.fasta0.png" width="550" /> |
 
-Brahman_Chromosome_X_vs_Charolais
+Brahman_Chromosome_X_vs_T2T_Charolais
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_UOA_Brahman_Chromosome_X0.png" width="550" />
 
@@ -281,7 +281,7 @@ Brahman_Chromosome_X_vs_Charolais
 
 file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y
 
-Wagyu Y is found at haplotype2-0001634\
+T2T_Wagyu Y is found at haplotype2-0001634\
 Nelore Y is found at X_N_shasta which is quite confusing since shoudn't it be at Y_N_shasta? *Answer*: Must be the PAR. Will still use Y_N_shasta which is the Nellore Y.
 
 | Tuli assembly Y vs T2T_Wagyu Y | Tuli assembly Y vs Nelore_X
@@ -300,6 +300,10 @@ Tully assembly Y vs Nelore_Y
 
 ------------------------------------------------------------------------------------
 #### Finding Y-contigs
+
+Y-chromosome is supposedly ~50Mb and we only usually get ~13Mb for the Y_chromosome. In T2T_Wagyu_Y, it could be two contigs which are **haplotype2-0001634 and haplotype2-0001654** since these two mapped well with the Y Angus.
+
+
 
 **Y-SNP markers alignment**
 
