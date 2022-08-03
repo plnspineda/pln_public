@@ -297,3 +297,34 @@ Tully assembly Y vs Nelore_Y
 | Angus reference Y vs Wagyu Y | Angus reference Y vs Nelore_X
 |----------------------------------|---------------------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta_Angus_Chromosome_Y0.png" width="550" /> |
+
+##### Y-SNP markers alignment
+
+sam files can be found here:
+- [1373 SNP probe markers](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_y_snp_probes.sam)
+- [additional 4 SNP probe marker (longer sequence)](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_additional_Y_SNP_markers.fa.sam)
+- [summary of the SNPs filtered at MAPQ>25 (table below)](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/aln-se_Tuli_shastav10_1K_y_snp_probes_filteredQ25.tsv)
+
+**Summary of the contigs that has the SNP markers, filtered at MAPQ>25**
+
+| ref_name | MAPQ_ave | marker_count | contig_length | 50Mb_ref_proportion (%) | remarks          |
+|----------|:--------:|:------------:|--------------:|------------------------:|------------------|
+| 1026     |    37    |       3      |         22617 |                    0.05 | unplaced         |
+| 104      |    37    |       3      |        383264 |                    0.77 | unplaced         |
+| 120      |   36.82  |      65      |       1288355 |                    2.58 | contig_for_Y     |
+| 1390     |    37    |       2      |         95101 |                    0.19 | unplaced         |
+| 144      |    37    |       8      |        158553 |                    0.32 | unplaced         |
+| 1716     |    37    |       2      |         59971 |                    0.12 | unplaced         |
+| 1726     |    37    |       1      |         35887 |                    0.07 | unplaced         |
+| 1778     |    37    |       1      |         19046 |                    0.04 | unplaced         |
+| 184      |    37    |      38      |       1071852 |                    2.14 | unplaced         |
+| 276      |    37    |       2      |        339059 |                    0.68 | unplaced         |
+| 314      |    37    |       3      |        326864 |                    0.65 | unplaced         |
+| 40       |    37    |      20      |      26792771 |                   53.59 | contig_for_chr23 |
+| 470      |    37    |       1      |         72243 |                    0.14 | unplaced         |
+| 506      |    37    |       1      |        253442 |                    0.51 | unplaced         |
+| 538      |    37    |       1      |        118244 |                    0.24 | contig_for_Y     |
+| 672      |    37    |       2      |          4720 |                    0.01 | unplaced         |
+| 804      |    37    |       2      |         23428 |                    0.05 | unplaced         |
+| 82       |    37    |      50      |       1274574 |                    2.55 | contig_for_Y     |
+| 92       |    37    |      231     |       8248324 |                   16.50 | contig_for_Y     |
