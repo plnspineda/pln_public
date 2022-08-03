@@ -306,6 +306,13 @@ Y-chromosome is supposedly ~50Mb and we only usually get ~13Mb for the Y_chromos
 total length for the two contigs = 59500937bp \
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/winnowmap_Y_angus_vs_T2T_wagyu.png" width="550" />
 
+also, looking at the sizes of all the contigs from T2T_Wagyu_Y, haplotype2-0001654 is at 29th largest contig while haplotype2-0001634 is the least largest contig before the next contig dropped to half its length \
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/contig_length_T2T_Wagyu.png" width="550" />
+
+
+
+
+
 **Y-SNP markers alignment**
 
 sam files can be found here:
