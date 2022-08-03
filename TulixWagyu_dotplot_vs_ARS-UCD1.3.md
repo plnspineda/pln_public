@@ -212,7 +212,7 @@ but still has to check the positions since this is just based on mapping.
 |---------------------|---------------------|
 | 1 contig | 8 contigs |
 | Prop_ref (%) = 100.99 | Prop_ref (%) = 22.09, 2.19, 2.86, 1.99, 2.94, 2.04, 66.44, 0.01 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_24.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_24.png" width="550" /> |
 
 | Tuli_Chromosome_25 | Wagyu_Chromosome_25|
 |---------------------|---------------------|
@@ -224,25 +224,25 @@ but still has to check the positions since this is just based on mapping.
 |---------------------|---------------------|
 | 1 contig | 1 contig |
 | Prop_ref (%) = 99.62 | Prop_ref (%) = 99.51 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/.images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/.images/dotplot_Tuli/Chromosome_26.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_26.png" width="550" /> |
 
 | Tuli_Chromosome_27 | Wagyu_Chromosome_27|
 |---------------------|---------------------|
 | 1 contig | 2 contigs |
 | Prop_ref (%) = 100.23 | Prop_ref (%) = 40.98, 57.91 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_27.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_27.png" width="550" /> |
 
 | Tuli_Chromosome_28 | Wagyu_Chromosome_28|
 |---------------------|---------------------|
 | 4 contigs | 1 contig |
 | Prop_ref (%) = 89.54, 0.02, 0.07, 10.36 | Prop_ref (%) = 100.88 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_28.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_28.png" width="550" /> |
 
 | Tuli_Chromosome_29 | Wagyu_Chromosome_29|
 |---------------------|---------------------|
 | 11 contig | 4 contigs |
 | Prop_ref (%) = 0.13, 0.06, 0.01, 10.71, 0.01, 0.23, 0.15, 0.11, 0.25, 0.08, 89.16 | Prop_ref (%) = 11.23, 0.66, 87.17, 2.08 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_2.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_2.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_29.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_29.png" width="550" /> |
 
 | Tuli_Chromosome_Y_vs_UOA_Angus_1 | Wagyu_Chromosome_X_vs_ARS-UCD1.3
 |----------------------------------|---------------------------------|
