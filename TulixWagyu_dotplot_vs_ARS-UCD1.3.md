@@ -282,9 +282,9 @@ Brahman_Chromosome_X_vs_Charolais
 file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y
 
 Wagyu Y is found at haplotype2-0001634\
-Nelore Y is found at X_N_shasta which is quite confusing since shoudn't it be at Y_N_shasta?
+Nelore Y is found at X_N_shasta which is quite confusing since shoudn't it be at Y_N_shasta? *Answer*: Must be the PAR. Will still use Y_N_shasta which is the Nellore Y.
 
-| Tuli assembly Y vs Wagyu Y | Tuli assembly Y vs Nelore_X
+| Tuli assembly Y vs T2T_Wagyu Y | Tuli assembly Y vs Nelore_X
 |----------------------------------|---------------------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Tuli_Chromosome_Y.fasta0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta.fna_Tuli_Chromosome_Y.fasta0.png" width="550" /> |
 
@@ -294,7 +294,7 @@ Tully assembly Y vs Nelore_Y
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Y_N_shasta.fna_chrY_Tuli_asm.fasta0.png" width="550" />
 
 
-| Angus reference Y vs Wagyu Y | Angus reference Y vs Nelore_X
+| Angus reference Y vs T2T_Wagyu Y | Angus reference Y vs Nelore_X
 |----------------------------------|---------------------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Wagyu_ref_v2_Angus_Chromosome_Y.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/X_N_shasta_Angus_Chromosome_Y0.png" width="550" /> |
 
