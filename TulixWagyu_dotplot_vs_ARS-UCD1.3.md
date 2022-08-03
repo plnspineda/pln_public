@@ -224,7 +224,7 @@ but still has to check the positions since this is just based on mapping.
 |---------------------|---------------------|
 | 1 contig | 1 contig |
 | Prop_ref (%) = 99.62 | Prop_ref (%) = 99.51 |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/.images/dotplot_Tuli/Chromosome_26.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_26.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Tuli/Chromosome_26.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/Chromosome_26.png" width="550" /> |
 
 | Tuli_Chromosome_27 | Wagyu_Chromosome_27|
 |---------------------|---------------------|
