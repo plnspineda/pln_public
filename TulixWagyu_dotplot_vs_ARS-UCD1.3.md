@@ -367,5 +367,8 @@ dot_plot with T2T_Wagyu_Y
 
 hehe. seems like there's a large chunk of repeat region?
 
-
 **Finding PAR in T2T_Wagyu_Y and Tuli_Y from Angus_Y annotation**
+
+Hypothesis: That good line at the start of the dotplot is possibly the PAR.
+
+file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y/ref_genome/Angus_annotation
