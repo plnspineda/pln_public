@@ -309,10 +309,6 @@ total length for the two contigs = 59500937bp \
 also, looking at the sizes of all the contigs from T2T_Wagyu_Y, haplotype2-0001654 is at 29th largest contig while haplotype2-0001634 is the least largest contig before the next contig dropped to half its length \
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/contig_length_T2T_Wagyu.png" width="550" />
 
-
-
-
-
 **Y-SNP markers alignment**
 
 sam files can be found here:
@@ -344,3 +340,32 @@ total length: 13795544 (excluding contig 40 because it's 50% of chromosome 23)
 | 804      |    37    |       2      |         23428 |                    0.05 | unplaced         |
 | 82       |    37    |      50      |       1274574 |                    2.55 | contig_for_Y     |
 | 92       |    37    |      231     |       8248324 |                   16.50 | contig_for_Y     |
+
+possible order of contigs: [paf_file_here](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/df_Wagyu_New_Angus.tsv)
+
+        120 +
+        276 -
+        538	+
+        92	-
+        470	-
+        104	+
+        314	-
+        144	+
+        184	+
+        1716	+
+        1026	-
+        804	-
+        1726	-
+        506	-
+        1778	-
+        1390	-
+        82	-
+
+dot_plot with T2T_Wagyu_Y
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/contigs_mapped_to_YSNP_37Q_winnowmap0.png" width="550" />
+
+hehe. seems like there's a large chunk of repeat region?
+
+
+**Finding PAR in T2T_Wagyu_Y and Tuli_Y from Angus_Y annotation**
