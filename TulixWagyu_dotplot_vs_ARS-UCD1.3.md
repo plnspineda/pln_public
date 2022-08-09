@@ -340,8 +340,8 @@ total length: 13795544 (excluding contig 40 because it's 50% of chromosome 23)
 | 1778     |    37    |       1      |         19046 |                    0.04 | unplaced         | - |
 | 1390     |    37    |       2      |         95101 |                    0.19 | unplaced         | - |
 | 82       |    37    |      50      |       1274574 |                    2.55 | contig_for_Y     | - |
-| 672      |    37    |       2      |          4720 |                    0.01 | unplaced         |
-| 40       |    37    |      20      |      26792771 |                   53.59 | contig_for_chr23 |
+| 672      |    37    |       2      |          4720 |                    0.01 | unplaced         |   |
+| 40       |    37    |      20      |      26792771 |                   53.59 | contig_for_chr23 |   |
 
 possible order of contigs: [paf_file_here](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/df_Wagyu_New_Angus.tsv)
 
@@ -365,12 +365,12 @@ file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_cont
 |-----------------|-------------------|----------------|---------------------|
 | Tuli_Y          | 13792424          | 6775140        | 1776269-8551408     |
 | Wagyu_X         | 144677779         | 6760422        | 137886957-144647378 |
-| Angus_Y         | 15658480          | 6728939        | 39897-6768835           |
-| Brahman_X       | 146092946         | 6780506        | 30693-6811198           |
+| Angus_Y         | 15658480          | 6728939        | 39897-6768835       |
+| Brahman_X       | 146092946         | 6780506        | 30693-6811198       |
 | ARS-UCD1.2_X    | 139009144         | 5899046        | 133110099-139009144 |
-| Nelore_X        | 11171212          | 6753620        | 4387323-11140942           |
+| Nelore_X        | 11171212          | 6753620        | 4387323-11140942    |
 | Nelore_Y        | 10500703          |                |                     |
-| T2T_Wagyu_Y     | 59501037          | 6738563        | 47845-6786407           |
+| T2T_Wagyu_Y     | 59501037          | 6738563        | 47845-6786407       |
 | T2T_Charolais_X | 169155847         | 6729907        | 162375123-169105029 |
 
 3. Dotplot with Tuli Y Chromosome PAR region which align well with Chromosome X as well.
@@ -384,7 +384,11 @@ file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_cont
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Wagyu_X_50contigs_PAR_Tuli_Y_18contigs0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_T2T_Wagyu_Y_haplo-1634-1654_PAR_Tuli_Y_18contigs0.png" width="550" /> |
 
 
-4. Which contig in Tuli Y is the PAR region?
-  - contig 120, 276, 538 and large portion of 92. But possibly contig 120 is not in PAR.
+4. Which contig in Tuli Y is the PAR?
+  - contig_92 [paf_file](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/PAR_Tuli_Y_18contigs.fa_Tuli_Y_18contigs_separate.paf)
 
 5. Wagyu Y vs Human Y chromosome
+
+**Aligning the Tuli assembly to T2T Wagyu Y contig**
+
+Since it seems like the T2T Wagyu Y has the complete Y, I aligned the Tuli assembly to Wagyu Y and see which contigs in the Tuli assembly I could use to assemble the Y chromosome.
