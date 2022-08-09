@@ -357,30 +357,31 @@ Hypothesis: That good line at the start of the dotplot is possibly the PAR.
 
 file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y/ref_genome/Angus_annotation
 
-1. Found PAR by lifting annotations from the ARS-UCD1.2 X chromosome using [liftoff](https://github.com/agshumate/Liftoff), looked for GPR143 to locate [boundary](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z/figures/1), however, I can't find PLCXD1 to determine each ends of PAR (so I just used the very end).
+1. Found PAR by lifting annotations from the ARS-UCD1.2 X chromosome using [liftoff](https://github.com/agshumate/Liftoff), looked for GPR143 to locate [boundary](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z/figures/1), however, I can't find PLCXD1 to determine each ends of PAR. I aligned the [PLCXD1](https://asia.ensembl.org/Bos_taurus/Transcript/Exons?db=core;g=ENSBTAG00000035144;r=1:88340909-88350179;t=ENSBTAT00000066297) to Tuli Y Chromosome and found the gene at this position: 1766910-1776269 which means Tuli_Y PAR should be at position 1776269-8551408.
+
 2. Possible PAR lengths of each assemblies:
 
 | **Assembly**    | **Contig_Length** | **PAR_length** | **PAR_position**    |
 |-----------------|-------------------|----------------|---------------------|
-| Tuli_Y          | 13792424          | 8551408        | 1-8551408           |
-| Wagyu_X         | 144677779         | 6790823        | 137886957-144677779 |
-| Angus_Y         | 15658480          | 6768835        | 1-6768835           |
-| Brahman_X       | 146092946         | 6811198        | 1-6811198           |
-| ARS-UCD1.2_X    | 139009144         | 5675961        | 133333184-139009144 |
-| Nelore_X        | 11171212          | 4387323        | 1-4387323           |
+| Tuli_Y          | 13792424          | 6775140        | 1776269-8551408     |
+| Wagyu_X         | 144677779         | 6760422        | 137886957-144647378 |
+| Angus_Y         | 15658480          | 6728939        | 39897-6768835           |
+| Brahman_X       | 146092946         | 6780506        | 30693-6811198           |
+| ARS-UCD1.2_X    | 139009144         | 5899046        | 133110099-139009144 |
+| Nelore_X        | 11171212          | 6753620        | 4387323-11140942           |
 | Nelore_Y        | 10500703          |                |                     |
-| T2T_Wagyu_Y     | 59501037          | 6786407        | 1-6786407           |
-| T2T_Charolais_X | 169155847         | 6780725        | 162375123-169155847 |
+| T2T_Wagyu_Y     | 59501037          | 6738563        | 47845-6786407           |
+| T2T_Charolais_X | 169155847         | 6729907        | 162375123-169105029 |
 
 3. Dotplot with Tuli Y Chromosome PAR region which align well with Chromosome X as well.
 
 | Tuli_Y_PAR vs Angus_Y_PAR | Tuli_Y_PAR vs ARS-UCD1.2_X_PAR
 |-----------|------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_Angus_Y_CM011803-10.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_ARS-UCD1-2_X_CM008197-20.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Angus_Y_CM011803-1_PAR_Tuli_Y_18contigs0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_ARS-UCD1-2_X_CM008197-2_PAR_Tuli_Y_18contigs0.png" width="550" /> |
 
-| Tuli_Y_PAR vs Angus_Y_NON-PAR | Tuli_Y_PAR vs T2T_Wagyu_Y_PAR
+| Tuli_Y_PAR vs Wagyu_X_PAR | Tuli_Y_PAR vs T2T_Wagyu_Y_PAR
 |-----------|------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/NON-PAR_Angus_Y_CM011803-1_PAR_Tuli_Y_18contigs0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_T2T_Wagyu_Y_haplo-1634-16540.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Wagyu_X_50contigs_PAR_Tuli_Y_18contigs0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_T2T_Wagyu_Y_haplo-1634-1654_PAR_Tuli_Y_18contigs0.png" width="550" /> |
 
 
 4. Which contig in Tuli Y is the PAR region?
