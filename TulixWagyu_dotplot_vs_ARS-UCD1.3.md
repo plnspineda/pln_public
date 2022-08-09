@@ -277,6 +277,8 @@ Brahman_Chromosome_X_vs_T2T_Charolais
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_UOA_Brahman_Chromosome_X0.png" width="550" />
 
+To do: investigate the ladder-like region
+
 #### Chromosome Y
 
 file location: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y
@@ -306,7 +308,7 @@ Y-chromosome is supposedly ~50Mb and we only usually get ~13Mb for the Y_chromos
 total length for the two contigs = 59500937bp \
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/winnowmap_Y_angus_vs_T2T_wagyu.png" width="550" />
 
-also, looking at the sizes of all the contigs from T2T_Wagyu_Y, haplotype2-0001654 is at 29th largest contig while haplotype2-0001634 is the least largest contig before the next contig dropped to half its length \
+also, looking at the sizes of all the contigs from T2T_Wagyu_Y, haplotype2-0001654 is at 29th largest contig while haplotype2-0001634 is the least largest contig before the next contig dropped to half its length suggesting it might be a real contig for a chromosome. In this case, it's Y. \
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/contig_length_T2T_Wagyu.png" width="550" />
 
 **Y-SNP markers alignment**
@@ -319,47 +321,29 @@ sam files can be found here:
 **Summary of the contigs that has the SNP markers, filtered at MAPQ>25**\
 total length: 13795544 (excluding contig 40 because it's 50% of chromosome 23)
 
-| ref_name | MAPQ_ave | marker_count | contig_length | 50Mb_ref_proportion (%) | remarks          |
-|----------|:--------:|:------------:|--------------:|------------------------:|------------------|
-| 1026     |    37    |       3      |         22617 |                    0.05 | unplaced         |
-| 104      |    37    |       3      |        383264 |                    0.77 | unplaced         |
-| 120      |   36.82  |      65      |       1288355 |                    2.58 | contig_for_Y     |
-| 1390     |    37    |       2      |         95101 |                    0.19 | unplaced         |
-| 144      |    37    |       8      |        158553 |                    0.32 | unplaced         |
-| 1716     |    37    |       2      |         59971 |                    0.12 | unplaced         |
-| 1726     |    37    |       1      |         35887 |                    0.07 | unplaced         |
-| 1778     |    37    |       1      |         19046 |                    0.04 | unplaced         |
-| 184      |    37    |      38      |       1071852 |                    2.14 | unplaced         |
-| 276      |    37    |       2      |        339059 |                    0.68 | unplaced         |
-| 314      |    37    |       3      |        326864 |                    0.65 | unplaced         |
-| 40       |    37    |      20      |      26792771 |                   53.59 | contig_for_chr23 |
-| 470      |    37    |       1      |         72243 |                    0.14 | unplaced         |
-| 506      |    37    |       1      |        253442 |                    0.51 | unplaced         |
-| 538      |    37    |       1      |        118244 |                    0.24 | contig_for_Y     |
+| ref_name | MAPQ_ave | marker_count | contig_length | 50Mb_ref_proportion (%) | remarks          |orientation|
+|----------|:--------:|:------------:|--------------:|------------------------:|------------------|---|
+| 120      |   36.82  |      65      |       1288355 |                    2.58 | contig_for_Y     | + |
+| 276      |    37    |       2      |        339059 |                    0.68 | unplaced         | - |
+| 538      |    37    |       1      |        118244 |                    0.24 | contig_for_Y     | + |
+| 92       |    37    |      231     |       8248324 |                   16.50 | contig_for_Y     | - |
+| 470      |    37    |       1      |         72243 |                    0.14 | unplaced         | - |
+| 104      |    37    |       3      |        383264 |                    0.77 | unplaced         | + |
+| 314      |    37    |       3      |        326864 |                    0.65 | unplaced         | - |
+| 144      |    37    |       8      |        158553 |                    0.32 | unplaced         | + |
+| 184      |    37    |      38      |       1071852 |                    2.14 | unplaced         | + |
+| 1716     |    37    |       2      |         59971 |                    0.12 | unplaced         | + |
+| 1026     |    37    |       3      |         22617 |                    0.05 | unplaced         | - |
+| 804      |    37    |       2      |         23428 |                    0.05 | unplaced         | - |
+| 1726     |    37    |       1      |         35887 |                    0.07 | unplaced         | - |
+| 506      |    37    |       1      |        253442 |                    0.51 | unplaced         | - |
+| 1778     |    37    |       1      |         19046 |                    0.04 | unplaced         | - |
+| 1390     |    37    |       2      |         95101 |                    0.19 | unplaced         | - |
+| 82       |    37    |      50      |       1274574 |                    2.55 | contig_for_Y     | - |
 | 672      |    37    |       2      |          4720 |                    0.01 | unplaced         |
-| 804      |    37    |       2      |         23428 |                    0.05 | unplaced         |
-| 82       |    37    |      50      |       1274574 |                    2.55 | contig_for_Y     |
-| 92       |    37    |      231     |       8248324 |                   16.50 | contig_for_Y     |
+| 40       |    37    |      20      |      26792771 |                   53.59 | contig_for_chr23 |
 
 possible order of contigs: [paf_file_here](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/y_SNP_markers/df_Wagyu_New_Angus.tsv)
-
-        120 +
-        276 -
-        538	+
-        92	-
-        470	-
-        104	+
-        314	-
-        144	+
-        184	+
-        1716	+
-        1026	-
-        804	-
-        1726	-
-        506	-
-        1778	-
-        1390	-
-        82	-
 
 dot_plot with T2T_Wagyu_Y
 
@@ -372,3 +356,34 @@ hehe. seems like there's a large chunk of repeat region?
 Hypothesis: That good line at the start of the dotplot is possibly the PAR.
 
 file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y/ref_genome/Angus_annotation
+
+1. Found PAR by lifting annotations from the ARS-UCD1.2 X chromosome using [liftoff](https://github.com/agshumate/Liftoff), looked for GPR143 to locate [boundary](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z/figures/1), however, I can't find PLCXD1 to determine each ends of PAR (so I just used the very end).
+2. Possible PAR lengths of each assemblies:
+
+| **Assembly**    | **Contig_Length** | **PAR_length** | **PAR_position**    |
+|-----------------|-------------------|----------------|---------------------|
+| Tuli_Y          | 13792424          | 8551408        | 1-8551408           |
+| Wagyu_X         | 144677779         | 6790823        | 137886957-144677779 |
+| Angus_Y         | 15658480          | 6768835        | 1-6768835           |
+| Brahman_X       | 146092946         | 6811198        | 1-6811198           |
+| ARS-UCD1.2_X    | 139009144         | 5675961        | 133333184-139009144 |
+| Nelore_X        | 11171212          | 4387323        | 1-4387323           |
+| Nelore_Y        | 10500703          |                |                     |
+| T2T_Wagyu_Y     | 59501037          | 6786407        | 1-6786407           |
+| T2T_Charolais_X | 169155847         | 6780725        | 162375123-169155847 |
+
+3. Dotplot with Tuli Y Chromosome PAR region which align well with Chromosome X as well.
+
+| Tuli_Y_PAR vs Angus_Y_PAR | Tuli_Y_PAR vs ARS-UCD1.2_X_PAR
+|-----------|------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_Angus_Y_CM011803-10.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_ARS-UCD1-2_X_CM008197-20.png" width="550" /> |
+
+| Tuli_Y_PAR vs Angus_Y_NON-PAR | Tuli_Y_PAR vs T2T_Wagyu_Y_PAR
+|-----------|------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/NON-PAR_Angus_Y_CM011803-1_PAR_Tuli_Y_18contigs0.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/PAR_Tuli_Y_18contigs_PAR_T2T_Wagyu_Y_haplo-1634-16540.png" width="550" /> |
+
+
+4. Which contig in Tuli Y is the PAR region?
+  - contig 120, 276, 538 and large portion of 92. But possibly contig 120 is not in PAR.
+
+5. Wagyu Y vs Human Y chromosome
