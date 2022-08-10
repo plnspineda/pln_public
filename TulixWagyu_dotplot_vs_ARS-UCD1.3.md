@@ -277,7 +277,10 @@ Brahman_Chromosome_X_vs_T2T_Charolais
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/dotplot_Wagyu/contig_haplotype1-0000042_UOA_Brahman_Chromosome_X0.png" width="550" />
 
-To do: investigate the ladder-like region
+Zoom-in
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/dotplot_zoom-in_T2T_Charolais_vs_Brahman_X.jpeg" width="550" />
+
 
 #### Chromosome Y
 
@@ -357,7 +360,7 @@ Hypothesis: That good line at the start of the dotplot is possibly the PAR.
 
 file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_contigs/sex_chromosomes/chromosome_Y/ref_genome/Angus_annotation
 
-1. Found PAR by lifting annotations from the ARS-UCD1.2 X chromosome using [liftoff](https://github.com/agshumate/Liftoff), looked for GPR143 to locate [boundary](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z/figures/1), however, I can't find PLCXD1 to determine each ends of PAR. I aligned the [PLCXD1](https://asia.ensembl.org/Bos_taurus/Transcript/Exons?db=core;g=ENSBTAG00000035144;r=1:88340909-88350179;t=ENSBTAT00000066297) to Tuli Y Chromosome and found the gene at this position: 1766910-1776269 which means Tuli_Y PAR should be at position 1776269-8551408.
+1. Found PAR by lifting annotations from the ARS-UCD1.2 X chromosome using [liftoff](https://github.com/agshumate/Liftoff), looked for GPR143 to locate [boundary](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z/figures/1), however, I can't find PLCXD1 in the annotations so I downloaded from NCBI instead. I aligned the [PLCXD1](https://asia.ensembl.org/Bos_taurus/Transcript/Exons?db=core;g=ENSBTAG00000035144;r=1:88340909-88350179;t=ENSBTAT00000066297) to Tuli Y Chromosome and found the gene to find the following PAR positions.
 
 2. Possible PAR lengths of each assemblies:
 
