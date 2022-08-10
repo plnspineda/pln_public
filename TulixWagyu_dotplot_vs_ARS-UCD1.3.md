@@ -392,6 +392,10 @@ file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_cont
 
 5. Wagyu Y vs Human Y chromosome
 
+Kind of the same as in the [paper](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z#Tab1) for Y-chromosomes.
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/HumanY_vs_T2T_WagyuY.jpeg" width="550" />
+
 **Aligning the Tuli assembly to T2T Wagyu Y contig**
 
 Since it seems like the T2T Wagyu Y has the complete Y, I aligned the Tuli assembly to Wagyu Y and see which contigs in the Tuli assembly I could use to assemble the Y chromosome.
