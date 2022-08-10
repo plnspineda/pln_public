@@ -279,7 +279,7 @@ Brahman_Chromosome_X_vs_T2T_Charolais
 
 Zoom-in
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/dotplot_zoom-in2_T2T_Charolais_vs_Brahman_X.jpeg" width="550" />
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/dotplot_zoom-in2_T2T_Charolais_vs_Brahman_X.jpeg" width="300" />
 
 
 #### Chromosome Y
