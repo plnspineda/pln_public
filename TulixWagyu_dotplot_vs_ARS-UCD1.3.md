@@ -402,7 +402,7 @@ Kind of the same as in the [paper](https://bmcgenomics.biomedcentral.com/article
 
 Aligned using BWA. SNP markers mapped with three contigs; haplotype2-0001634 and haplotype2-0001654 coinciding with the presumed contigs while haplotype2-0001650 is chromosome_23 which is the same result as for the Tuli assembly.
 
-7. All the chromosome equivalent of the T2T_Wagyu contigs:
+7. All the chromosome equivalent with the T2T_Wagyu contigs:
 
 | NAME               |    LENGTH | CHROMOSOME    | PROP_QUERY | ORIENTATION |
 |--------------------|----------:|---------------|------------|-------------|
@@ -436,7 +436,16 @@ Aligned using BWA. SNP markers mapped with three contigs; haplotype2-0001634 and
 | haplotype2-0001656 |  78312078 | Chromosome_25 | 184.91     | +           |
 | haplotype2-0001644 |  58734772 | Chromosome_26 | 112.97     | -           |
 | haplotype2-0001657 |  63528600 | Chromosome_27 | 139.28     | +           |
-| haplotype2-0001642 |  43109272 | Chromosome_28 | 93.84      | +           |
+| haplotype2-0001642 |  43109272 | Chromosome_28 | 93.84*     | +           |
 | haplotype2-0001651 |  56163682 | Chromosome_29 | 109.91     | +           |
 | haplotype2-0001634 |  13893689 | Chromosome_Y  | 88.73      | -           |
 | haplotype2-0001654 |  45607248 | Chromosome_Y  | 291.26     | -           |
+
+*smaller than query, but probably has another contig.
+
+8. Until HiC is available, this is the list of contigs for Y chromosomes for now:\
+Note: Only 13 contigs were used from mapping with the Angus_Y and the y_SNP_markers (but not all).
+
+Dotplot with T2T_Wagyu and Tuli Y-chromosome assembly.
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Tuli_Chromosome_Y.fasta_T2T_Wagyu_Y_haplo-1634-1654.fasta0.png" />
