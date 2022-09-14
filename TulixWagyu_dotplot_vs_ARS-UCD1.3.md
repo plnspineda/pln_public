@@ -390,12 +390,53 @@ file location of gtf files: /hpcfs/users/a1812753/TulixWagyu_backup/reorder_cont
 4. Which contig in Tuli Y is the PAR?
   - contig_92 [paf_file](https://github.com/plnspineda/pln_public/blob/pln/alignment_files/PAR_Tuli_Y_18contigs.fa_Tuli_Y_18contigs_separate.paf)
 
-5. Wagyu Y vs Human Y chromosome
+5. T2T_Wagyu Y vs Human Y chromosome
 
-Kind of the same as in the [paper](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z#Tab1) for Y-chromosomes.
+Kind of the same as in the [paper](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6364-z#Tab1) for Y-chromosomes. **this is just the upper-half of the T2T_Wagyu_Y
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/HumanY_vs_T2T_WagyuY.jpeg" width="550" />
 
-**Aligning the Tuli assembly to T2T Wagyu Y contig**
+6. Checking if the contigs for T2T_Wagyu_Y is indeed the Y-chromosomes using y_SNP_markers...
 
-Since it seems like the T2T Wagyu Y has the complete Y, I aligned the Tuli assembly to Wagyu Y and see which contigs in the Tuli assembly I could use to assemble the Y chromosome.
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Y-snp-markers-T2TWagyu.png" />
+
+Aligned using BWA. SNP markers mapped with three contigs; haplotype2-0001634 and haplotype2-0001654 coinciding with the presumed contigs while haplotype2-0001650 is chromosome_23 which is the same result as for the Tuli assembly.
+
+7. All the chromosome equivalent of the T2T_Wagyu contigs:
+
+| NAME               |    LENGTH | CHROMOSOME    | PROP_QUERY | ORIENTATION |
+|--------------------|----------:|---------------|------------|-------------|
+| haplotype2-0001614 | 173391082 | Chromosome_1  | 109.37     | -           |
+| haplotype2-0001615 | 156878617 | Chromosome_2  | 115.16     | +           |
+| haplotype2-0001639 | 136380939 | Chromosome_3  | 112.71     | +           |
+| haplotype2-0001658 | 126999771 | Chromosome_4  | 105.83     | -           |
+| haplotype2-0001629 | 137369161 | Chromosome_5  | 114.39     | +           |
+| haplotype2-0001641 | 113390177 | Chromosome_6  | 96.25      | -           |
+| haplotype2-0001655 |  22689454 | Chromosome_6  | 19.26      | -           |
+| haplotype2-0001645 | 111710303 | Chromosome_7  | 100.93     | +           |
+| haplotype2-0001633 | 129712032 | Chromosome_8  | 114.47     | -           |
+| haplotype2-0001638 | 123194416 | Chromosome_9  | 116.82     | +           |
+| haplotype2-0001643 | 112032441 | Chromosome_10 | 108.44     | +           |
+| haplotype2-0001620 | 115532783 | Chromosome_11 | 107.99     | +           |
+| haplotype2-0001631 | 110984222 | Chromosome_12 | 127.25     | +           |
+| haplotype2-0001647 | 102215726 | Chromosome_13 | 122.45     | -           |
+| haplotype2-0001617 |  31456740 | Chromosome_14 | 38.17      | +           |
+| haplotype2-0001619 |  68874822 | Chromosome_14 | 83.58      | -           |
+| haplotype2-0001636 |  86581406 | Chromosome_15 | 101.85     | -           |
+| haplotype2-0001624 |  96761639 | Chromosome_16 | 119.44     | +           |
+| haplotype2-0001632 |  82934539 | Chromosome_17 | 113.35     | +           |
+| haplotype2-0001630 |  81474408 | Chromosome_18 | 123.78     | -           |
+| haplotype2-0001653 |  72341849 | Chromosome_19 | 114.01     | +           |
+| haplotype2-0001640 |  84266000 | Chromosome_20 | 117.08     | -           |
+| haplotype2-0001635 |  55137791 | Chromosome_21 | 78.92      | -           |
+| haplotype2-0001652 |  29235100 | Chromosome_21 | 41.85      | +           |
+| haplotype2-0001648 |  80064047 | Chromosome_22 | 131.74     | -           |
+| haplotype2-0001650 |  66310779 | Chromosome_23 | 126.31     | +           |
+| haplotype2-0001646 |  72467140 | Chromosome_24 | 116.29     | +           |
+| haplotype2-0001656 |  78312078 | Chromosome_25 | 184.91     | +           |
+| haplotype2-0001644 |  58734772 | Chromosome_26 | 112.97     | -           |
+| haplotype2-0001657 |  63528600 | Chromosome_27 | 139.28     | +           |
+| haplotype2-0001642 |  43109272 | Chromosome_28 | 93.84      | +           |
+| haplotype2-0001651 |  56163682 | Chromosome_29 | 109.91     | +           |
+| haplotype2-0001634 |  13893689 | Chromosome_Y  | 88.73      | -           |
+| haplotype2-0001654 |  45607248 | Chromosome_Y  | 291.26     | -           |
