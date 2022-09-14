@@ -448,4 +448,4 @@ Note: Only 13 contigs were used from mapping with the Angus_Y and the y_SNP_mark
 
 Dotplot with T2T_Wagyu and Tuli Y-chromosome assembly.
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/Tuli_Chromosome_Y.fasta_T2T_Wagyu_Y_haplo-1634-1654.fasta0.png" />
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/sex_chromosomes/chrY_Tuli_asm_reorder10.png" />
