@@ -33,6 +33,7 @@ Repeat files result:
         bases masked:    1830047 bp ( 5.37 %)
         ==================================================
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_%20Rplot_repeat.png" width="450" />
 
-<img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_Rplot_haps.png" width="450" />
+| REPEATS | OTHERS IN HAPLOBIN |
+|-----|-----|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_%20Rplot_repeat.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_Rplot_haps.png" width="450" /> |
