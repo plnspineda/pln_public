@@ -32,3 +32,7 @@ Repeat files result:
         GC level:         51.08 %
         bases masked:    1830047 bp ( 5.37 %)
         ==================================================
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_%20Rplot_repeat.png" width="450" />
+
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/T_Rplot_haps.png" width="450" />
