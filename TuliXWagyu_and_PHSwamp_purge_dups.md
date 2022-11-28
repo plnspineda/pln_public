@@ -1,8 +1,15 @@
+*2022.11.28*
+
+1. [Tuli purge dups](#Tulipurge)
+2. [Wagyu purge dups](#Wagyupurge)
+3. [Swamp buffalo purge dups](#sppurge)
+
+
 # Purge dups result
 
 ## Tuli and Wagyu
 
-**Tuli assembly stats:**
+**Tuli assembly stats:** <a name="Tulipurge"></a>
 
 | Assembly                       | size (Gb) | contig | N50 (Mb) | max_contig (Mb) | QV      |
 |--------------------------------|-----------|--------|----------|-----------------|---------|
@@ -65,7 +72,7 @@ Final assembly for Tuli assembly after purge dups (removing the repeats and junk
         L75                         23                      
         # N's per 100 kbp           0.00
 
-**Wagyu assembly stats:**
+**Wagyu assembly stats:** <a name="Wagyupurge"></a>
 
 | Assembly                        | size (Gb) | contig | N50 (Mb) | max_contig (Mb) |      QV |
 |---------------------------------|----------:|-------:|---------:|----------------:|--------:|
@@ -127,7 +134,7 @@ Final assembly for Tuli assembly after purge dups (removing the repeats and junk
 
 ## Philippine Swamp Buffalo
 
-**Swamp assembly stats**
+**Swamp assembly stats** <a name="sppurge"></a>
 
 | Assembly               |          size | contig |        N50 |  max_contig | QV      |
 |------------------------|--------------:|-------:|-----------:|------------:|---------|
