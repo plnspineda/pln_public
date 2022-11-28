@@ -158,9 +158,9 @@ Repeat contig result:
         bases masked:   15165061 bp ( 7.11 %)
         ==================================================
 
-        | REPEATS | OTHERS IN HAPLOBIN |
-        |-----|-----|
-        | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/SP_Rplot_repeats.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/SP_Rplot_haps.png" width="450" /> |
+| REPEATS | OTHERS IN HAPLOBIN |
+|-----|-----|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/SP_Rplot_repeats.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/SP_Rplot_haps.png" width="450" /> |
 
 Final assembly for swamp buffalo after purge dups (junks removed)
 
