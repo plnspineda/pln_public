@@ -3,6 +3,7 @@
 1. [Tuli purge dups](#Tulipurge)
 2. [Wagyu purge dups](#Wagyupurge)
 3. [Swamp buffalo purge dups](#sppurge)
+4. [Scaffolding with SALSA2](#salsa2)
 
 
 # Purge dups result
@@ -17,6 +18,7 @@
 | Tuli_shastav10_complete_purged | 2.5279    | 565    | 73.1705  | 136.24          | 41.8958 |
 | Tuli_shastav10_haplo_purged**  | 0.0448    | 947    |          | 1.07            |         |
 | Tuli_shastav10_filtered_purged | 2.5383    | 850    | 73.1705  | 136.24          | 41.5655 |
+| Tuli_flyev2.6                   | 2.5092    | 834    | 38.3670  | 105.60          | 40.7343 |
 
 
 Tuli purge dups haplo stats:
@@ -80,6 +82,7 @@ Final assembly for Tuli assembly after purge dups (removing the repeats and junk
 | Wagyu_shastav10_complete_purged | 2.6515    | 446    | 58.1767  | 136.05          | 41.4811 |
 | Wagyu_shastav10_haplo_purged**  | 0.0404    | 1008   |          | 0.5342          |         |
 | Wagyu_shastav10_filtered_purged | 2.6633    | 760    | 58.1767  | 136.05          | 41.2585 |
+| Wagyu_flyev2.6                  | 2.6331    | 766    | 42.4578  | 106.64          | 40.8899 |
 
 Wagyu purge dups haplo stats:
 
@@ -193,3 +196,5 @@ Final assembly for swamp buffalo after purge dups (junks removed)
         L50                         13                               
         L75                         23                               
         # N's per 100 kbp           0.00
+
+# Scaffolding with SALSA2 <a name="salsa2"></a>
