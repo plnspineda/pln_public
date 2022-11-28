@@ -88,13 +88,13 @@ Wagyu purge dups haplo stats:
 
 Repeat files result:
 
-==================================================
-file name: hap_REPEAT.fa            
-sequences:           599
-total length:   28266706 bp  (28266706 bp excl N/X-runs)
-GC level:         50.97 %
-bases masked:    1012084 bp ( 3.58 %)
-==================================================
+          ==================================================
+          file name: hap_REPEAT.fa            
+          sequences:           599
+          total length:   28266706 bp  (28266706 bp excl N/X-runs)
+          GC level:         50.97 %
+          bases masked:    1012084 bp ( 3.58 %)
+          ==================================================
 
 | REPEATS | OTHERS IN HAPLOBIN |
 |-----|-----|
