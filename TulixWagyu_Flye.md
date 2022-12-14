@@ -146,8 +146,8 @@ output files:
 
 **SUMMARY**
 
-- removed the 954 repeats and 387 junks in Tuli
-- removed the 564 repeats and 218 junks in Wagyu
+- removed the 954 repeats and 387 junks in Tuli (total of 52 Mb)
+- removed the 564 repeats and 218 junks in Wagyu (total of 24 Mb)
 
 purged assembly in comparison with before purging:
 
