@@ -158,4 +158,4 @@ purged assembly in comparison with before purging:
 | Wagyu        | 2.71 | 1784   | 71    | 156.45     |
 | Wagyu purged | 2.69 | 1002   | 71    | 156.45     |
 
-**will proceed with polishing with this
+**will proceed polishing with this
