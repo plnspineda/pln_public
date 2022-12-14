@@ -105,7 +105,7 @@ output files:
 
 **SUMMARY**
 
-| Assembly     | Size (bp) |
+| Assembly IGH    | Size (bp) |
 |--------------|-----------|
 | Gaur         | 545789    |
 | Pied         | 651224    |
@@ -115,20 +115,31 @@ output files:
 | Wagyu shasta | 641625    |
 
 
-**NOTE: Flye seems to be able to resolve IGH in Tuli but not in Wagyu**
-
 ### Purge dups
 
-for the automatic cutoffs, there are too many contigs that went to purge bin:
+*Purging result*
 
-        (base) [a1812753@l01 filter]$ cat hap.stat
-             45 HAPLOTIG
-            109 HIGHCOV
-           1526 JUNK
-              1 OVLP
-            125 REPEAT
+|          | Tuli | total length | Wagyu | total length |             |
+|----------|------|--------------|-------|--------------|-------------|
+| HAPLOTIG | 148  | 4,161,752    | 126   | 3,768,412    |             |
+| HIGHCOV  | 89   | 2,336,907    | 292   | 8,690,036    |             |
+| JUNK     | 387  | 3,775,524    | 218   | 2,155,089    | will remove |
+| OVLP     | 8    | 1,157,034    | 1     | 92,435       |             |
+| REPEAT   | 954  | 48,283,079   | 564   | 21,913,575   | will remove |
+|          |      | 59,714,296   |       | 36,619,547   |             |
 
-Only 171Mb left for the purged output while 2.4Gb were in the haplobin, so I tried using a manual cutoff:
+**Tuli**
 
-        (base) [a1812753@l01 low_cutoffs]$ cat cutoffs
-        5	36	58	70	117	210
+| REPEATS | OTHERS IN HAPLOBIN |
+|-----|-----|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/flye/Rplot_Tuli_repeat.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/flye/Rplot_Tuli_haps.png" width="450" /> |
+
+**Wagyu**
+
+| REPEATS | OTHERS IN HAPLOBIN |
+|-----|-----|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/flye/Rplot_Wagyu_repeat.png" width="450" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/purge_dups/flye/Rplot_Wagyu_haps.png" width="450" /> |
+
+**SUMMARY**
+
+removed the 
