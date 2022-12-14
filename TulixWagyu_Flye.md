@@ -115,6 +115,8 @@ output files:
 | Wagyu shasta | 641625    |
 
 
+**will use Flye assembly since it resolves IGH better and increases Wagyu N50
+
 ### Purge dups
 
 *Purging result*
