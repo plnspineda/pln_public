@@ -53,13 +53,13 @@ output files:
 | Wagyu flye   | 2.71          | 1784       | 71.00        | 156.45              | 40.8899 |
 | Wagyu shasta | 2.69          | 1442       | 58.18        | 136.05              | 40.9735 |
 
-**IGH**
+**IGH FLYE**
 
 | Pied_vs_Pied | Pied_vs_Tuli | Tuli_vs_Tuli |
 |---------------|---------------|-------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Tuli_contig595_3452r.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Tuli_vs_Tuli.jpeg" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Tuli_contig595.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Tuli_vs_Tuli_1contg.jpeg" width="550" /> |
 
-| Pied_vs_Pied | Pied_vs_Wagyu | Tuli_vs_Wagyu |
+| Pied_vs_Pied | Pied_vs_Wagyu | Wagyu_vs_Wagyu |
 |---------------|---------------|-------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Wagyu_9contigs.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Wagyu_vs_Wagyu.jpeg" width="550" /> |
 
@@ -76,3 +76,15 @@ output files:
 | contig_2388/rc         |      10624 |   |                              |            |
 | contig_2380/rc         |      33336 |   |                              |            |
 | contig_2379/rc         |      30742 |   |                              |            |
+
+**IGH SHASTA**
+
+| Pied_vs_Pied | Pied_vs_Tuli | Tuli_vs_Tuli |
+|---------------|---------------|-------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Tuli_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Tuli_vs_Tuli.jpeg" width="550" /> |
+
+| Pied_vs_Pied | Pied_vs_Wagyu | Wagyu_vs_Wagyu |
+|---------------|---------------|-------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Pied_vs_Wagyu.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Wagyu_vs_Wagyu.jpeg" width="550" /> |
+
+**NOTE: Flye seems to be able to resolve IGH in Tuli but not in Wagyu**
