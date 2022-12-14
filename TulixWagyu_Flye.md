@@ -116,3 +116,19 @@ output files:
 
 
 **NOTE: Flye seems to be able to resolve IGH in Tuli but not in Wagyu**
+
+### Purge dups
+
+for the automatic cutoffs, there are too many contigs that went to purge bin:
+
+        (base) [a1812753@l01 filter]$ cat hap.stat
+             45 HAPLOTIG
+            109 HIGHCOV
+           1526 JUNK
+              1 OVLP
+            125 REPEAT
+
+Only 171Mb left for the purged output while 2.4Gb were in the haplobin, so I tried using a manual cutoff:
+
+        (base) [a1812753@l01 low_cutoffs]$ cat cutoffs
+        5	36	58	70	117	210
