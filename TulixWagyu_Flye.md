@@ -65,10 +65,10 @@ output files:
 
 *Length of each contigs*
 
-| **Wagyu**              | **553438** |   | **Tuli**                     | **753822** |
+| **Wagyu**              | **553438** |   | **Tuli**                     | **562766** |
 |------------------------|-----------:|---|------------------------------|-----------:|
 | contig_2392:1-70179/rc |      70179 |   | contig_595:69106311-69669076 | 562766     |
-| contig_2391            |      44351 |   | contig_3452                  | 191056     |
+| contig_2391            |      44351 |   |         |    |
 | contig_2385            |     297510 |   |                              |            |
 | contig_2389/rc         |      17336 |   |                              |            |
 | contig_2394/rc         |      26235 |   |                              |            |
@@ -86,5 +86,33 @@ output files:
 | Pied_vs_Pied | Pied_vs_Wagyu | Wagyu_vs_Wagyu |
 |---------------|---------------|-------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Pied_vs_Wagyu.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/shasta_Wagyu_vs_Wagyu.jpeg" width="550" /> |
+
+*Length of each contigs*
+
+| Wagyu             | 641625 |   | Tuli                | 665214 |
+|-------------------|-------:|---|---------------------|-------:|
+| 38:1-153025.fa/rc | 153025 |   | 2:45119379-45437849 | 218471 |
+| 464               | 38270  |   | 358.fa/rc           | 23948  |
+| 466               | 13167  |   | 476                 | 22702  |
+| 468               | 152277 |   | 954                 | 23632  |
+| 216               | 119933 |   | 1190                | 12046  |
+| 214               | 36185  |   | 978                 | 116612 |
+| 212/rc            | 128768 |   | 1318                | 80336  |
+|                   |        |   | 292.fa/rc           | 52123  |
+|                   |        |   | 498.fa/rc           | 72174  |
+|                   |        |   | 736.fa/rc           | 31042  |
+|                   |        |   | 1666                | 12128  |
+
+**SUMMARY**
+
+| Assembly     | Size (bp) |
+|--------------|-----------|
+| Gaur         | 545789    |
+| Pied         | 651224    |
+| Tuli flye    | 562766    |
+| Tuli shasta  | 665214    |
+| Wagyu flye   | 553438    |
+| Wagyu shasta | 641625    |
+
 
 **NOTE: Flye seems to be able to resolve IGH in Tuli but not in Wagyu**
