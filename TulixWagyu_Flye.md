@@ -142,4 +142,16 @@ output files:
 
 **SUMMARY**
 
-removed the 
+- removed the 954 repeats and 387 junks in Tuli
+- removed the 564 repeats and 218 junks in Wagyu
+
+purged assembly in comparison with before purging:
+
+| assembly     | size | contig |   N50 | max contig |
+|--------------|-----:|-------:|------:|-----------:|
+| Tuli         | 2.61 | 2116   | 70.22 | 156.4      |
+| Tuli purged  | 2.56 | 773    | 70.22 | 156.4      |
+| Wagyu        | 2.71 | 1784   | 71    | 156.45     |
+| Wagyu purged | 2.69 | 1002   | 71    | 156.45     |
+
+**will proceed with polishing with this
