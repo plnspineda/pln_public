@@ -56,9 +56,11 @@ output files:
 **IGH**
 
 | Pied_vs_Pied | Pied_vs_Tuli | Tuli_vs_Tuli |
+|---------------|---------------|-------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Tuli_contig595_3452r.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Tuli_vs_Tuli.jpeg" width="550" /> |
 
 | Pied_vs_Pied | Pied_vs_Wagyu | Tuli_vs_Wagyu |
+|---------------|---------------|-------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Pied.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Pied_vs_Wagyu_9contigs.jpeg" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/IGH/Wagyu_vs_Wagyu.jpeg" width="550" /> |
 
 *Length of each contigs*
