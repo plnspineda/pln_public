@@ -233,14 +233,4 @@ Statistic results:
 | Tuli_Chromosome_1 | Wagyu_Chromosome_1|
 |---------------------|---------------------|
 | 1 contig | 1 contig |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_10.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_10.png" width="550" /> |
-
-| Tuli_Chromosome_2 | Wagyu_Chromosome_2|
-|---------------------|---------------------|
-| 1 contig | 1 contig |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_20.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_20.png" width="550" /> |
-
-| Tuli_Chromosome_3 | Wagyu_Chromosome_3|
-|---------------------|---------------------|
-| 1 contig | 1 contig |
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_30.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_30.png" width="550" /> |
