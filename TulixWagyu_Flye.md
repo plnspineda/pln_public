@@ -159,3 +159,73 @@ purged assembly in comparison with before purging:
 | Wagyu purged | 2.69 | 1002   | 71    | 156.45     |
 
 **will proceed polishing with this
+
+
+## YaHS scaffolding
+*2023.03.05*
+
+        #!/bin/bash
+        #SBATCH -p batch
+        #SBATCH -N 1            # number of nodes
+        #SBATCH -n 12            # number of cores
+        #SBATCH --time=60:00:00 # time allocation (D-HH:MM:SS)
+        #SBATCH --mem=128GB       # memory pool for all cores
+
+        module load arch/haswell
+        module load quast/4.5-foss-2016uofa-Python-2.7.11
+
+        # scaffolding cattle genome with repeats less than 1Mb and junks purged
+        export PATH=$PATH:/hpcfs/users/a1812753/tools/yahs
+
+        ASM=/hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/purge_dups/flye_Tuli/filter/Tuli_flyev29_hq_purged.fasta
+        BED=/hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/scaffolding/SALSA_flye/Tuli/Tuli_flyev29_hq_purged_rep1.bed
+
+        yahs --no-contig-ec $ASM $BED
+        quast.py yahs.out_scaffolds_final.fa -o quast_yahs.out_scaffolds_final
+
+#### Create juicer hic map
+
+        module load arch/haswell
+        module load SAMtools/1.10-foss-2016b
+        export PATH=$PATH:/hpcfs/users/a1812753/tools/yahs
+
+        samtools faidx yahs.out_scaffolds_final.fa
+        /hpcfs/users/a1812753/tools/yahs/juicer pre -a -o out_JBAT yahs.out.bin yahs.out_scaffolds_final.agp /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/purge_dups/flye_Tuli/filter/Tuli_flyev29_hq_purged.fasta.fai > out_JBAT.log 2>&1
+
+
+        module load juicer_tools/1.8.9-Java-1.8.0_121 SAMtools/1.10-foss-2016b
+
+        ## create scaffolds_final.chrom.sizes
+
+        samtools faidx yahs.out_scaffolds_final.fa
+        cut -f 1,2 yahs.out_scaffolds_final.fa.fai > scaffolds_final.chrom.sizes
+
+        (java -jar ${EBROOTJUICER_TOOLS}/juicer_tools.1.8.9_jcuda.0.8.jar pre out_JBAT.txt out_JBAT.hic.part <(cat out_JBAT.log  | grep PRE_C_SIZE | awk '{print $2" "$3}')) && (mv out_JBAT.hic.part out_JBAT.hic)
+
+Statistic results:
+
+| Assembly                   | Tuli       | Wagyu      |
+|----------------------------|------------|------------|
+| # contigs (>= 0 bp)        | 690        | 880        |
+| # contigs (>= 1000 bp)     | 669        | 851        |
+| # contigs (>= 5000 bp)     | 533        | 656        |
+| # contigs (>= 10000 bp)    | 454        | 553        |
+| # contigs (>= 25000 bp)    | 335        | 377        |
+| # contigs (>= 50000 bp)    | 264        | 274        |
+| Total length (>= 0 bp)     | 2560599307 | 2687634333 |
+| Total length (>= 1000 bp)  | 2560586638 | 2687614744 |
+| Total length (>= 5000 bp)  | 2560239087 | 2687106583 |
+| Total length (>= 10000 bp) | 2559663983 | 2686316574 |
+| Total length (>= 25000 bp) | 2557759508 | 2683544914 |
+| Total length (>= 50000 bp) | 2555106630 | 2679913117 |
+| # contigs                  | 688        | 877        |
+| Largest contig             | 156401090  | 156450840  |
+| Total length               | 2560598814 | 2687634011 |
+| GC (%)                     | 42.12      | 41.97      |
+| N50                        | 101914841  | 103799677  |
+| N75                        | 69673243   | 70154425   |
+| L50                        | 11         | 11         |
+| L75                        | 19         | 20         |
+| # N's per 100 kbp          | 0.68       | 0.93       |
+
+## Dotplot
