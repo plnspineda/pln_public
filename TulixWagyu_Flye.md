@@ -230,7 +230,161 @@ Statistic results:
 
 ## Dotplot
 
+|    | Tuli                    |   | alignment proportion | length proportion | Wagyu       |   | alignment proportion | length proportion |
+|----|-------------------------|---|---------------------:|------------------:|-------------|---|---------------------:|------------------:|
+| 1  | scaffold_1, 39          | - | 92.53                | 98.65             | scaffold_1  | + | 95.93                | 98.69             |
+| 2  | scaffold_2              | - | 97.75                | 100.20            | scaffold_3  | - | 97.60                | 99.97             |
+| 3  | scaffold_5              | + | 95.80                | 99.79             | scaffold_5  | - | 93.95                | 99.79             |
+| 4  | scaffold_4              | + | 94.65                | 100.88            | scaffold_4  | - | 96.65                | 101.04            |
+| 5  | scaffold_3              | + | 97.35                | 100.92            | scaffold_6  | + | 97.58                | 99.63             |
+| 6  | scaffold_6              | + | 94.20                | 99.83             | scaffold_7  | + | 96.34                | 99.83             |
+| 7  | scaffold_8              | + | 91.06                | 99.96             | scaffold_9  | - | 93.82                | 100.08            |
+| 8  | scaffold_7              | + | 93.81                | 99.73             | scaffold_8  | + | 96.95                | 99.90             |
+| 9  | scaffold_10             | + | 97.13                | 98.69             | scaffold_11 | - | 96.65                | 98.43             |
+| 10 | scaffold_11             | - | 92.92                | 98.65             | scaffold_12 | + | 93.38                | 98.96             |
+| 11 | scaffold_9              | + | 98.12                | 100.01            | scaffold_10 | - | 98.28                | 99.81             |
+| 12 | scaffold_12             | - | 94.44                | 101.98            | scaffold_13 | - | 95.07                | 99.24             |
+| 13 | scaffold_14             | - | 98.15                | 100.04            | scaffold_15 | + | 97.97                | 99.84             |
+| 14 | scaffold_15             | - | 99.09                | 99.33             | scaffold_17 | + | 98.81                | 99.74             |
+| 15 | scaffold_13             | + | 92.61                | 98.50             | scaffold_14 | - | 91.09                | 98.78             |
+| 16 | scaffold_16             | + | 96.13                | 100.67            | scaffold_16 | - | 96.11                | 102.33            |
+| 17 | scaffold_17             | - | 98.27                | 99.70             | scaffold_18 | - | 97.97                | 100.33            |
+| 18 | scaffold_20             | + | 95.36                | 99.75             | scaffold_21 | + | 93.57                | 101.19            |
+| 19 | scaffold_21             | - | 97.01                | 100.34            | scaffold_22 | + | 98.07                | 99.84             |
+| 20 | scaffold_18             | - | 98.58                | 99.54             | scaffold_19 | + | 98.39                | 99.59             |
+| 21 | scaffold_19             | - | 96.96                | 99.73             | scaffold_20 | - | 96.73                | 100.42            |
+| 22 | scaffold_23             | + | 99.87                | 100.20            | scaffold_24 | + | 99.84                | 100.11            |
+| 23 | Scaffold_24:1-126500468 | - | 93.53                | 101.57            | scaffold_25 | + | 93.89                | 102.85            |
+| 24 | scaffold_22             | - | 99.13                | 99.85             | scaffold_23 | + | 98.54                | 101.27            |
+| 25 | scaffold_29             | - | 99.81                | 100.31            | scaffold_30 | + | 99.87                | 100.31            |
+| 26 | scaffold_25             | + | 94.24                | 99.59             | scaffold_26 | - | 94.15                | 99.24             |
+| 27 | scaffold_28             | + | 95.85                | 99.14             | scaffold_29 | + | 96.69                | 98.67             |
+| 28 | scaffold_27             | - | 99.62                | 100.16            | scaffold_28 | - | 99.67                | 100.32            |
+| 29 | scaffold_26             | + | 97.44                | 100.35            | scaffold_27 | - | 97.25                | 100.34            |
+| X  |                         |   |                      |                   | scaffold_2  | + | 75.71                | 102.21            |
+
+*proportion with ARS-UCD1.3
+
 | Tuli_Chromosome_1 | Wagyu_Chromosome_1|
 |---------------------|---------------------|
-| 1 contig | 1 contig |
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_10.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_10.png" width="550" /> |
+
+| Tuli_Chromosome_2 | Wagyu_Chromosome_2|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_20.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_20.png" width="550" /> |
+
+| Tuli_Chromosome_3 | Wagyu_Chromosome_3|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_30.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_30.png" width="550" /> |
+
+| Tuli_Chromosome_4 | Wagyu_Chromosome_4|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_40.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_40.png" width="550" /> |
+
+| Tuli_Chromosome_5 | Wagyu_Chromosome_5|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_50.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_50.png" width="550" /> |
+
+| Tuli_Chromosome_6 | Wagyu_Chromosome_6|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_60.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_60.png" width="550" /> |
+
+| Tuli_Chromosome_7 | Wagyu_Chromosome_7|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
+
+| Tuli_Chromosome_8 | Wagyu_Chromosome_8|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
+
+| Tuli_Chromosome_8 | Wagyu_Chromosome_8|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_80.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_80.png" width="550" /> |
+
+| Tuli_Chromosome_9 | Wagyu_Chromosome_9|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
+
+| Tuli_Chromosome_10 | Wagyu_Chromosome_10|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_100.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_100.png" width="550" /> |
+
+| Tuli_Chromosome_11 | Wagyu_Chromosome_11|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_110.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_110.png" width="550" /> |
+
+| Tuli_Chromosome_12 | Wagyu_Chromosome_12|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_120.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_120.png" width="550" /> |
+
+| Tuli_Chromosome_13 | Wagyu_Chromosome_13|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_130.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_130.png" width="550" /> |
+
+| Tuli_Chromosome_14 | Wagyu_Chromosome_14|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_140.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_140.png" width="550" /> |
+
+| Tuli_Chromosome_15 | Wagyu_Chromosome_15|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_150.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_150.png" width="550" /> |
+
+| Tuli_Chromosome_16 | Wagyu_Chromosome_16|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_160.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_160.png" width="550" /> |
+
+| Tuli_Chromosome_17 | Wagyu_Chromosome_17|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_170.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_170.png" width="550" /> |
+
+| Tuli_Chromosome_18 | Wagyu_Chromosome_18|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_180.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_180.png" width="550" /> |
+
+| Tuli_Chromosome_19 | Wagyu_Chromosome_19|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_190.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_190.png" width="550" /> |
+
+| Tuli_Chromosome_20 | Wagyu_Chromosome_20|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_200.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_200.png" width="550" /> |
+
+| Tuli_Chromosome_21 | Wagyu_Chromosome_21|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_210.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_210.png" width="550" /> |
+
+| Tuli_Chromosome_22 | Wagyu_Chromosome_22|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_220.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_220.png" width="550" /> |
+
+| Tuli_Chromosome_23 | Wagyu_Chromosome_23|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_230.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_230.png" width="550" /> |
+
+| Tuli_Chromosome_24 | Wagyu_Chromosome_24|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_240.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_240.png" width="550" /> |
+
+| Tuli_Chromosome_25 | Wagyu_Chromosome_25|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_250.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_250.png" width="550" /> |
+
+| Tuli_Chromosome_26 | Wagyu_Chromosome_26|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_260.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_260.png" width="550" /> |
+
+| Tuli_Chromosome_27 | Wagyu_Chromosome_27|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_270.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_270.png" width="550" /> |
+
+| Tuli_Chromosome_28 | Wagyu_Chromosome_28|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_280.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_280.png" width="550" /> |
+
+| Tuli_Chromosome_29 | Wagyu_Chromosome_29|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_290.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_290.png" width="550" /> |
+
+| Tuli_Chromosome_Y | Wagyu_Chromosome_X|
+|---------------------|---------------------|
+| -Y-still to assemble- | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_X0.png" width="550" /> |
