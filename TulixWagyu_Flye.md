@@ -295,15 +295,11 @@ Statistic results:
 
 | Tuli_Chromosome_8 | Wagyu_Chromosome_8|
 |---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
-
-| Tuli_Chromosome_8 | Wagyu_Chromosome_8|
-|---------------------|---------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_80.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_80.png" width="550" /> |
 
 | Tuli_Chromosome_9 | Wagyu_Chromosome_9|
 |---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_90.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_90.png" width="550" /> |
 
 | Tuli_Chromosome_10 | Wagyu_Chromosome_10|
 |---------------------|---------------------|
