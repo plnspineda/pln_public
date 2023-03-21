@@ -446,20 +446,17 @@ DeepVariant VCF output notes: PASS -> When an entry has PASS, it means that a ca
 
 4. Polish assembly with merfin
 
-        a. Create a meryl file of the assembly
+        # a. Create a meryl file of the assembly
+        singularity exec /apps/containers/merqury_v1.3.sif meryl count k=21 $ASM output merfin_polish/assembly.meryl
 
-            singularity exec /apps/containers/merqury_v1.3.sif meryl count k=21 $ASM output merfin_polish/assembly.meryl
+        # b. Filter F1 meryl with kmer count less than 10
+        singularity exec /apps/containers/merqury_v1.3.sif meryl greater-than 10 F1.meryl output F1_reads_k21.gt10.meryl
 
-        b. Filter F1 meryl with kmer count less than 10
+        # c. To get the -peak value, run the short reads with genomescope and use the haploid peak.
+        export PATH=$PATH:/hpcfs/users/a1812753/tools/genomescope2.0
+        genomescope.R -i F1.histo -o genomescope_output -k 21
 
-            singularity exec /apps/containers/merqury_v1.3.sif meryl greater-than 10 F1.meryl output F1_reads_k21.gt10.meryl
-
-        c. To get the -peak value, run the short reads with genomescope and use the haploid peak.
-
-            export PATH=$PATH:/hpcfs/users/a1812753/tools/genomescope2.0
-            genomescope.R -i F1.histo -o genomescope_output -k 21
-
-        <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/genomescope_gt_and_peak.png" width="550" />
+<img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/genomescope_gt_and_peak.png" width="550" />
 
         Run with merfin
 
