@@ -459,8 +459,8 @@ DeepVariant VCF output notes: PASS -> When an entry has PASS, it means that a ca
             export PATH=$PATH:/hpcfs/users/a1812753/tools/genomescope2.0
             genomescope.R -i F1.histo -o genomescope_output -k 21
 
-        <insert picture>
-
+        <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/genomescope_gt_and_peak.png" width="550" />
+        
         Run with merfin
 
         module load arch/haswell Singularity/3.7.4
