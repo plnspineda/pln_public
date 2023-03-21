@@ -384,3 +384,115 @@ Statistic results:
 | Tuli_Chromosome_Y | Wagyu_Chromosome_X|
 |---------------------|---------------------|
 | -Y-still to assemble- | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_X0.png" width="550" /> |
+
+
+*2023.03.20*
+
+## Scaffolding comparison (default run vs no-error correction)
+
+
+## Polishing with Pepper-Margin-DeepVariant and Merfin
+
+1. First map the reads to the reference assembly using minimap2
+
+        module purge
+        module load arch/haswell
+        module load minimap2/2.24
+        module load SAMtools/1.10-foss-2016b
+
+        READS=/hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/haplotype/haplotype-Tuli_sire.fastq.gz
+        ASM=/hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/purge_dups/flye_Tuli/filter/Tuli_flyev29_hq_purged.fasta
+
+        read_base=(`basename $READS`)
+        read_base=${read_base%.fasta}
+
+        minimap2 -ax map-ont -t 24 $ASM $READS | samtools view -hb -F 0x904 > $read_base'_unsorted_0x904.bam'
+        samtools sort -@24 -o $read_base'_sorted_0x904.bam' $read_base'_unsorted_0x904.bam'
+        samtools index -@24 $read_base'_sorted_0x904.bam'
+
+        # -F 0x904 -> count only primary alignments and exclude uncertain alignments
+        # -hb -> output in bam with header
+
+2. Run pepper-DeepVariant
+
+Note: had to change `tmp` folder to the group account because it requires ~2Gb of tmp memory
+
+        module load arch/haswell
+        module load Singularity/3.7.4
+        export TMPDIR=./tmp
+
+        # singularity pull docker://kishwars/pepper_deepvariant:r0.8
+        # r0.8 does not support polishing, it's only up to r0.4
+
+        singularity exec --bind /usr/lib/locale/ \
+        ../../docker_images/pepper_deepvariant_r0.8.sif \
+        run_pepper_margin_deepvariant call_variant \
+        -b haplotype-Tuli_sire.fastq.gz_sorted_0x904.bam \
+        -f /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/purge_dups/flye_Tuli/filter/Tuli_flyev29_hq_purged.fasta \
+        -o output \
+        -t 24 \
+        -p Tuli_flyev29_hq_purged \
+        --ont_r9_guppy5_sup
+
+DeepVariant VCF output notes: PASS -> When an entry has PASS, it means that a candidate was generated and the neural network classifier gave the probability of the non-reference genotype call as higher than for reference; RefCall -> When an entry has RefCall present, it means that a candidate was generated and the neural network classifier gave a higher probability for a reference call [github query](https://github.com/google/deepvariant/issues/278)
+
+
+3. Filter spurious variant calls with low stringency filters (QUAL less than 1)
+
+        bcftools filter -e 'GT=="RR" || QUAL<=1' -Ov output/Tuli_flyev29_hq_purged.vcf.gz >  output/Tuli_flyev29_hq_purged_filtered.vcf
+
+        # -e 'GT=="RR" || QUAL<=1' -> exclude homozygous ref calls (0/0) and quals that are less than 1
+        # -Ov -> (output type) output vcf
+
+4. Polish assembly with merfin
+
+        a. Create a meryl file of the assembly
+
+            singularity exec /apps/containers/merqury_v1.3.sif meryl count k=21 $ASM output merfin_polish/assembly.meryl
+
+        b. Filter F1 meryl with kmer count less than 10
+
+            singularity exec /apps/containers/merqury_v1.3.sif meryl greater-than 10 F1.meryl output F1_reads_k21.gt10.meryl
+
+        c. To get the -peak value, run the short reads with genomescope and use the haploid peak.
+
+            export PATH=$PATH:/hpcfs/users/a1812753/tools/genomescope2.0
+            genomescope.R -i F1.histo -o genomescope_output -k 21
+
+        <insert picture>
+
+        Run with merfin
+
+        module load arch/haswell Singularity/3.7.4
+        export PATH=$PATH:/hpcfs/users/a1812753/tools/merfin/merfin/build/bin
+
+        merfin -polish -sequence $ASM -seqmers merfin_polish/assembly.meryl -readmers $READMR -peak 27 -vcf output/Tuli_flyev29_hq_purged_filtered.vcf -output merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf 2> merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.err
+
+5. Create consensus sequence by applying VCF variants to a reference fasta file
+
+        module load arch/haswell BCFtools/1.9
+
+        bcftools view -Oz merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf -o merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz
+
+        bcftools index --threads 16 merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz
+
+        bcftools consensus -H1 -f /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/purge_dups/flye_Tuli/filter/Tuli_flyev29_hq_purged.fasta -o merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta merfin_polish/Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz
+
+        ## -Oz -> (output type) output compressed vcf file
+        ## -H1 -> use the first allele, regardless of phasing
+        ## -f -> reference sequence in fasta format
+
+Output files:
+
+location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/polishing/flye_nanohq/Tuli_pepper_r0.8/output
+
+        intermediate_files  Tuli_flyev29_hq_purged_filtered.vcf  Tuli_flyev29_hq_purged.vcf.gz.tbi
+        logs                Tuli_flyev29_hq_purged.vcf.gz        Tuli_flyev29_hq_purged.visual_report.html
+
+location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/polishing/flye_nanohq/Tuli_pepper_r0.8/merfin_polish
+
+        assembly.meryl                                         Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf
+        Tuli_flyev29_hq_purged_filtered_merfinpolish.err       Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz
+        Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta  Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz.csi
+
+final polished assembly.fasta -> Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta
