@@ -296,6 +296,35 @@ Comparison on the size of chromosomes and number of contigs
 | 29          | scaffold_27 | 4                   | 51274347  |                     | 4                     | 51274347  | 0               |
 | X           | scaffold_2  | 52                  | 141785956 | Yes (5)             | 49                    | 142086358 | 300402          |
 
+*Chromosome 12 of Wagyu has 3Mb difference between scaffolder default run and no error correction. Dotplot comparison below:
+
+| default run (with breaking) | no-error correction |
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm_purged.fl.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm.fl_polished.png" width="550" /> |
+
+This is due to additional contigs after breaking a contig_772 (70940000bp) and contig_943 (600311)
+
+        scaffold_13	1	70940000	1	W	contig_772*	1	70940000	-
+        scaffold_13	70940201	71103027	3	W	contig_3190*	1	162827	-
+        scaffold_13	71103228	71127801	5	W	contig_951*	1	24574	-
+        scaffold_13	71128002	71295610	7	W	contig_2463*	1	167609	-
+        scaffold_13	71295811	71475573	9	W	contig_948	1	179763	+
+        scaffold_13	71475774	71614103	11	W	contig_2985	1	138330	-
+        scaffold_13	71614304	72156614	13	W	contig_943	58001	600311	+
+        scaffold_13	72156815	72270226	15	W	contig_937	1	113412	-
+        scaffold_13	72270427	72366151	17	W	contig_938	1	95725	-
+        scaffold_13	72366352	72540258	19	W	contig_936	1	173907	-
+        scaffold_13	72540459	72736907	21	W	contig_952	1	196449	+
+        scaffold_13	72737108	73106580	23	W	contig_953	1	369473	-
+        scaffold_13	73106781	73914318	25	W	contig_940	1	807538	-
+        scaffold_13	73914519	74561394	27	W	contig_947	1	646876	+
+        scaffold_13	74561595	89761376	29	W	contig_941*	1	15199782	+
+
+*contigs from the no-error correction
+
+| default run | no-error correction|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/default_run_Chromosome_120.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_120.png" width="550" /> |
 
 *2023.03.20*
 
