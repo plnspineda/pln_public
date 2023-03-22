@@ -326,6 +326,8 @@ This is due to additional contigs after breaking a contig_772 (70940000bp) and c
 |---------------------|---------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/default_run_Chromosome_120.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_120.png" width="550" /> |
 
+
+
 *2023.03.20*
 
 ## Scaffolding comparison (default run vs no-error correction)
