@@ -493,3 +493,5 @@ location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/polishing/
         Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta  Tuli_flyev29_hq_purged_filtered_merfinpolish.vcf.polish.vcf.gz.csi
 
 final polished assembly.fasta -> Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta
+
+#### Result
