@@ -202,7 +202,11 @@ purged assembly in comparison with before purging:
 
         (java -jar ${EBROOTJUICER_TOOLS}/juicer_tools.1.8.9_jcuda.0.8.jar pre out_JBAT.txt out_JBAT.hic.part <(cat out_JBAT.log  | grep PRE_C_SIZE | awk '{print $2" "$3}')) && (mv out_JBAT.hic.part out_JBAT.hic)
 
+### Scaffolding comparison (default run vs no-error correction)
+
 Statistic results:
+
+*2023.03.18*
 
 | Assembly                   | Tuli_default | Wagyu_default | Tuli_noerror-corr | Wagyu_noerror-corr |
 |----------------------------|--------------|---------------|-------------------|--------------------|
@@ -321,12 +325,6 @@ This is due to additional contigs after breaking a contig_772 (70Mbbp vs 71Mbbp)
 | default run | no-error correction|
 |---------------------|---------------------|
 | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/default_run_Chromosome_120.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_120.png" width="550" /> |
-
-
-
-*2023.03.20*
-
-## Scaffolding comparison (default run vs no-error correction)
 
 
 ## Polishing with Pepper-Margin-DeepVariant and Merfin
