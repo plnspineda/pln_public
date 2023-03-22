@@ -204,186 +204,66 @@ purged assembly in comparison with before purging:
 
 Statistic results:
 
-| Assembly                   | Tuli       | Wagyu      |
-|----------------------------|------------|------------|
-| # contigs (>= 0 bp)        | 690        | 880        |
-| # contigs (>= 1000 bp)     | 669        | 851        |
-| # contigs (>= 5000 bp)     | 533        | 656        |
-| # contigs (>= 10000 bp)    | 454        | 553        |
-| # contigs (>= 25000 bp)    | 335        | 377        |
-| # contigs (>= 50000 bp)    | 264        | 274        |
-| Total length (>= 0 bp)     | 2560599307 | 2687634333 |
-| Total length (>= 1000 bp)  | 2560586638 | 2687614744 |
-| Total length (>= 5000 bp)  | 2560239087 | 2687106583 |
-| Total length (>= 10000 bp) | 2559663983 | 2686316574 |
-| Total length (>= 25000 bp) | 2557759508 | 2683544914 |
-| Total length (>= 50000 bp) | 2555106630 | 2679913117 |
-| # contigs                  | 688        | 877        |
-| Largest contig             | 156401090  | 156450840  |
-| Total length               | 2560598814 | 2687634011 |
-| GC (%)                     | 42.12      | 41.97      |
-| N50                        | 101914841  | 103799677  |
-| N75                        | 69673243   | 70154425   |
-| L50                        | 11         | 11         |
-| L75                        | 19         | 20         |
-| # N's per 100 kbp          | 0.68       | 0.93       |
+| Assembly                   | Tuli_default | Wagyu_default | Tuli_noerror-corr | Wagyu_noerror-corr |
+|----------------------------|--------------|---------------|-------------------|--------------------|
+| # contigs (>= 0 bp)        | 730          | 913           | 690               | 880                |
+| # contigs (>= 1000 bp)     | 709          | 884           | 669               | 851                |
+| # contigs (>= 5000 bp)     | 570          | 687           | 533               | 656                |
+| # contigs (>= 10000 bp)    | 490          | 584           | 454               | 553                |
+| # contigs (>= 25000 bp)    | 372          | 406           | 335               | 377                |
+| # contigs (>= 50000 bp)    | 299          | 301           | 264               | 274                |
+| Total length (>= 0 bp)     | 2560600107   | 2687634733    | 2560599307        | 2687634333         |
+| Total length (>= 1000 bp)  | 2560587438   | 2687615144    | 2560586638        | 2687614744         |
+| Total length (>= 5000 bp)  | 2560233887   | 2687102983    | 2560239087        | 2687106583         |
+| Total length (>= 10000 bp) | 2559652783   | 2686312974    | 2559663983        | 2686316574         |
+| Total length (>= 25000 bp) | 2557771513   | 2683507314    | 2557759508        | 2683544914         |
+| Total length (>= 50000 bp) | 2555055301   | 2679807919    | 2555106630        | 2679913117         |
+| # contigs                  | 728          | 910           | 688               | 877                |
+| Largest contig             | 156401090    | 156450840     | 156401090         | 156450840          |
+| Total length               | 2560599614   | 2687634411    | 2560598814        | 2687634011         |
+| GC (%)                     | 42.12        | 41.97         | 42.12             | 41.97              |
+| N50                        | 101914841    | 103799677     | 101914841         | 103799677          |
+| N75                        | 69673243     | 71675967      | 69673243          | 70154425           |
+| L50                        | 11           | 11            | 11                | 11                 |
+| L75                        | 19           | 19            | 19                | 20                 |
+| # N's per 100 kbp          | 0.71         | 0.95          | 0.68              | 0.93               |
 
-## Dotplot
 
-|    | Tuli           | contigs |   | alignment proportion | length proportion |   | Wagyu       | contigs |   | alignment proportion | length proportion |
-|----|----------------|---------|---|----------------------|-------------------|---|-------------|---------|---|----------------------|-------------------|
-| 1  | scaffold_1, 39 | 3       | - | 92.53                | 98.65             |   | scaffold_1  | 1       | + | 95.93                | 98.69             |
-| 2  | scaffold_2     | 1       | - | 97.75                | 100.20            |   | scaffold_3  | 1       | - | 97.60                | 99.97             |
-| 3  | scaffold_5     | 6       | + | 95.80                | 99.79             |   | scaffold_5  | 6       | - | 93.95                | 99.79             |
-| 4  | scaffold_4     | 1       | + | 94.65                | 100.88            |   | scaffold_4  | 2       | - | 96.65                | 101.04            |
-| 5  | scaffold_3     | 3       | + | 97.35                | 100.92            |   | scaffold_6  | 5       | + | 97.58                | 99.63             |
-| 6  | scaffold_6     | 7       | + | 94.20                | 99.83             |   | scaffold_7  | 2       | + | 96.34                | 99.83             |
-| 7  | scaffold_8     | 1       | + | 91.06                | 99.96             |   | scaffold_9  | 2       | - | 93.82                | 100.08            |
-| 8  | scaffold_7     | 3       | + | 93.81                | 99.73             |   | scaffold_8  | 3       | + | 96.95                | 99.90             |
-| 9  | scaffold_10    | 2       | + | 97.13                | 98.69             |   | scaffold_11 | 1       | - | 96.65                | 98.43             |
-| 10 | scaffold_11    | 3       | - | 92.92                | 98.65             |   | scaffold_12 | 3       | + | 93.38                | 98.96             |
-| 11 | scaffold_9     | 2       | + | 98.12                | 100.01            |   | scaffold_10 | 1       | - | 98.28                | 99.81             |
-| 12 | scaffold_12    | 3       | - | 94.44                | 101.98            |   | scaffold_13 | 5       | - | 95.07                | 99.24             |
-| 13 | scaffold_14    | 6       | - | 98.15                | 100.04            |   | scaffold_15 | 6       | + | 97.97                | 99.84             |
-| 14 | scaffold_15    | 2       | - | 99.09                | 99.33             |   | scaffold_17 | 3       | + | 98.81                | 99.74             |
-| 15 | scaffold_13    | 1       | + | 92.61                | 98.50             |   | scaffold_14 | 1       | - | 91.09                | 98.78             |
-| 16 | scaffold_16    | 5       | + | 96.13                | 100.67            |   | scaffold_16 | 3       | - | 96.11                | 102.33            |
-| 17 | scaffold_17    | 2       | - | 98.27                | 99.70             |   | scaffold_18 | 2       | - | 97.97                | 100.33            |
-| 18 | scaffold_20    | 7       | + | 95.36                | 99.75             |   | scaffold_21 | 3       | + | 93.57                | 101.19            |
-| 19 | scaffold_21    | 2       | - | 97.01                | 100.34            |   | scaffold_22 | 1       | + | 98.07                | 99.84             |
-| 20 | scaffold_18    | 1       | - | 98.58                | 99.54             |   | scaffold_19 | 1       | + | 98.39                | 99.59             |
-| 21 | scaffold_19    | 1       | - | 96.96                | 99.73             |   | scaffold_20 | 4       | - | 96.73                | 100.42            |
-| 22 | scaffold_23    | 1       | + | 99.87                | 100.20            |   | scaffold_24 | 1       | + | 99.84                | 100.11            |
-| 23 | scaffold_24    | 2       | - | 93.53                | 101.57            |   | scaffold_25 | 7       | + | 93.89                | 102.85            |
-| 24 | scaffold_22    | 1       | - | 99.13                | 99.85             |   | scaffold_23 | 1       | + | 98.54                | 101.27            |
-| 25 | scaffold_29    | 1       | - | 99.81                | 100.31            |   | scaffold_30 | 1       | + | 99.87                | 100.31            |
-| 26 | scaffold_25    | 3       | + | 94.24                | 99.59             |   | scaffold_26 | 3       | - | 94.15                | 99.24             |
-| 27 | scaffold_28    | 3       | + | 95.85                | 99.14             |   | scaffold_29 | 3       | + | 96.69                | 98.67             |
-| 28 | scaffold_27    | 2       | - | 99.62                | 100.16            |   | scaffold_28 | 2       | - | 99.67                | 100.32            |
-| 29 | scaffold_26    | 4       | + | 97.44                | 100.35            |   | scaffold_27 | 4       | - | 97.25                | 100.34            |
-| X  |                |         |   |                      |                   |   | scaffold_2  | 49      | + | 75.71                | 102.21            |
+Comparison on the size of chromosomes and number of contigs
 
-*proportion with ARS-UCD1.3
+| Chromosomes | Tuli        | deafult_run_contigs | size      | with contig breaks? | noec_contigs | size      | size_difference | Wagyu       | deafult_run_contigs | size      | with contig breaks? | noec_contigs | size      | size_difference |
+|-------------|-------------|---------------------|-----------|---------------------|--------------|-----------|-----------------|-------------|---------------------|-----------|---------------------|--------------|-----------|-----------------|
+| 1           | scaffold_1  | 1                   | 156401090 |                     | 1            | 156401090 | 0               | scaffold_1  | 1                   | 156450840 |                     | 1            | 156450840 | 0               |
+| 2           | scaffold_2  | 1                   | 136506533 |                     | 1            | 136506533 | 0               | scaffold_3  | 1                   | 136113000 | Yes (1)             | 1            | 136188231 | 75231           |
+| 3           | scaffold_5  | 6                   | 120752645 |                     | 6            | 120752645 | 0               | scaffold_5  | 5                   | 120709671 |                     | 6            | 120747761 | 38090           |
+| 4           | scaffold_4  | 1                   | 121056641 |                     | 1            | 121056641 | 0               | scaffold_4  | 2                   | 121167618 | Yes (1)             | 2            | 121252075 | 84457           |
+| 5           | scaffold_3  | 3                   | 121194679 |                     | 3            | 121194679 | 0               | scaffold_6  | 5                   | 119641076 |                     | 5            | 119641076 | 0               |
+| 6           | scaffold_6  | 7                   | 117602346 | Yes (1)             | 7            | 117608346 | 6000            | scaffold_7  | 2                   | 117602180 |                     | 2            | 117602180 | 0               |
+| 7           | scaffold_8  | 1                   | 110569000 | Yes (1)             | 1            | 110636286 | 67286           | scaffold_9  | 2                   | 110766233 |                     | 2            | 110766233 | 0               |
+| 8           | scaffold_7  | 3                   | 113011192 |                     | 3            | 113011192 | 0               | scaffold_8  | 3                   | 113209785 |                     | 3            | 113209785 | 0               |
+| 9           | scaffold_10 | 2                   | 104069468 |                     | 2            | 104069468 | 0               | scaffold_11 | 1                   | 103799677 |                     | 1            | 103799677 | 0               |
+| 10          | scaffold_11 | 3                   | 101914841 |                     | 3            | 101914841 | 0               | scaffold_12 | 3                   | 102234956 |                     | 3            | 102234956 | 0               |
+| 11          | scaffold_9  | 2                   | 106993904 |                     | 2            | 106993904 | 0               | scaffold_10 | 1                   | 106778547 |                     | 1            | 106778547 | 0               |
+| 12          | scaffold_12 | 3                   | 88765974  | Yes (1)             | 3            | 88940898  | 174924          | scaffold_13 | 15                  | 89761376  | Yes (2)             | 5            | 86557175  | -3204201        |
+| 13          | scaffold_14 | 6                   | 83502111  |                     | 6            | 83502111  | 0               | scaffold_15 | 6                   | 83336454  |                     | 6            | 83336454  | 0               |
+| 14          | scaffold_15 | 4                   | 82066655  | Yes (2)             | 2            | 81847367  | -219288         | scaffold_17 | 3                   | 82129270  | Yes (1)             | 3            | 82184713  | 55443           |
+| 15          | scaffold_13 | 1                   | 83729664  |                     | 1            | 83729664  | 0               | scaffold_14 | 1                   | 83972338  |                     | 1            | 83972338  | 0               |
+| 16          | scaffold_16 | 5                   | 81560757  |                     | 5            | 81560757  | 0               | scaffold_16 | 3                   | 82897991  |                     | 3            | 82897991  | 0               |
+| 17          | scaffold_17 | 2                   | 72946751  |                     | 2            | 72946751  | 0               | scaffold_18 | 2                   | 73407576  |                     | 2            | 73407576  | 0               |
+| 18          | scaffold_20 | 7                   | 65603004  | Yes (1)             | 7            | 65657273  | 54269           | scaffold_21 | 3                   | 66601248  |                     | 3            | 66601248  | 0               |
+| 19          | scaffold_21 | 3                   | 63595365  | Yes (1)*            | 2            | 63668066  | 72701           | scaffold_22 | 1                   | 63347965  |                     | 1            | 63347965  | 0               |
+| 20          | scaffold_18 | 1                   | 71644399  |                     | 1            | 71644399  | 0               | scaffold_19 | 1                   | 71675967  |                     | 1            | 71675967  | 0               |
+| 21          | scaffold_19 | 1                   | 69673243  |                     | 1            | 69673243  | 0               | scaffold_20 | 5                   | 69891745  | Yes (3)             | 4            | 70154425  | 262680          |
+| 22          | scaffold_23 | 1                   | 60896241  |                     | 1            | 60896241  | 0               | scaffold_24 | 1                   | 60838928  |                     | 1            | 60838928  | 0               |
+| 23          | scaffold_24 | 2                   | 53320223  |                     | 2            | 53320223  | 0               | scaffold_25 | 7                   | 53992448  |                     | 7            | 53992448  | 0               |
+| 24          | scaffold_22 | 1                   | 62221011  |                     | 1            | 62221011  | 0               | scaffold_23 | 1                   | 63105737  |                     | 1            | 63105737  | 0               |
+| 25          | scaffold_29 | 1                   | 42480646  |                     | 1            | 42480646  | 0               | scaffold_30 | 1                   | 42428083  | Yes (1)             | 1            | 42480083  | 52000           |
+| 26          | scaffold_25 | 3                   | 51777404  |                     | 3            | 51777404  | 0               | scaffold_26 | 3                   | 51594877  |                     | 3            | 51594877  | 0               |
+| 27          | scaffold_28 | 3                   | 45220362  |                     | 3            | 45220362  | 0               | scaffold_29 | 3                   | 45004584  |                     | 3            | 45004584  | 0               |
+| 28          | scaffold_27 | 2                   | 45927334  | Yes (1)             | 2            | 46014334  | 87000           | scaffold_28 | 2                   | 45933414  |                     | 2            | 46086501  | 153087          |
+| 29          | scaffold_26 | 5                   | 51191488  | Yes (2)*            | 4            | 51275218  | 83730           | scaffold_27 | 4                   | 51274347  |                     | 4            | 51274347  | 0               |
+| X/Y         |             |                     |           |                     |              |           |                 | scaffold_2  | 52                  | 141785956 | Yes (5)             | 49           | 142086358 | 300402          |
 
-| Tuli_Chromosome_1 | Wagyu_Chromosome_1|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_10.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_10.png" width="550" /> |
-
-| Tuli_Chromosome_2 | Wagyu_Chromosome_2|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_20.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_20.png" width="550" /> |
-
-| Tuli_Chromosome_3 | Wagyu_Chromosome_3|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_30.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_30.png" width="550" /> |
-
-| Tuli_Chromosome_4 | Wagyu_Chromosome_4|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_40.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_40.png" width="550" /> |
-
-| Tuli_Chromosome_5 | Wagyu_Chromosome_5|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_50.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_50.png" width="550" /> |
-
-| Tuli_Chromosome_6 | Wagyu_Chromosome_6|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_60.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_60.png" width="550" /> |
-
-| Tuli_Chromosome_7 | Wagyu_Chromosome_7|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_70.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_70.png" width="550" /> |
-
-| Tuli_Chromosome_8 | Wagyu_Chromosome_8|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_80.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_80.png" width="550" /> |
-
-| Tuli_Chromosome_9 | Wagyu_Chromosome_9|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_90.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_90.png" width="550" /> |
-
-| Tuli_Chromosome_10 | Wagyu_Chromosome_10|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_100.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_100.png" width="550" /> |
-
-| Tuli_Chromosome_11 | Wagyu_Chromosome_11|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_110.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_110.png" width="550" /> |
-
-| Tuli_Chromosome_12 | Wagyu_Chromosome_12|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_120.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_120.png" width="550" /> |
-
-| Tuli_Chromosome_13 | Wagyu_Chromosome_13|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_130.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_130.png" width="550" /> |
-
-| Tuli_Chromosome_14 | Wagyu_Chromosome_14|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_140.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_140.png" width="550" /> |
-
-| Tuli_Chromosome_15 | Wagyu_Chromosome_15|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_150.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_150.png" width="550" /> |
-
-| Tuli_Chromosome_16 | Wagyu_Chromosome_16|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_160.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_160.png" width="550" /> |
-
-| Tuli_Chromosome_17 | Wagyu_Chromosome_17|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_170.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_170.png" width="550" /> |
-
-| Tuli_Chromosome_18 | Wagyu_Chromosome_18|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_180.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_180.png" width="550" /> |
-
-| Tuli_Chromosome_19 | Wagyu_Chromosome_19|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_190.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_190.png" width="550" /> |
-
-| Tuli_Chromosome_20 | Wagyu_Chromosome_20|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_200.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_200.png" width="550" /> |
-
-| Tuli_Chromosome_21 | Wagyu_Chromosome_21|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_210.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_210.png" width="550" /> |
-
-| Tuli_Chromosome_22 | Wagyu_Chromosome_22|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_220.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_220.png" width="550" /> |
-
-| Tuli_Chromosome_23 | Wagyu_Chromosome_23|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_230.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_230.png" width="550" /> |
-
-| Tuli_Chromosome_24 | Wagyu_Chromosome_24|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_240.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_240.png" width="550" /> |
-
-| Tuli_Chromosome_25 | Wagyu_Chromosome_25|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_250.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_250.png" width="550" /> |
-
-| Tuli_Chromosome_26 | Wagyu_Chromosome_26|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_260.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_260.png" width="550" /> |
-
-| Tuli_Chromosome_27 | Wagyu_Chromosome_27|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_270.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_270.png" width="550" /> |
-
-| Tuli_Chromosome_28 | Wagyu_Chromosome_28|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_280.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_280.png" width="550" /> |
-
-| Tuli_Chromosome_29 | Wagyu_Chromosome_29|
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Tuli/Chromosome_290.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_290.png" width="550" /> |
-
-| Tuli_Chromosome_Y | Wagyu_Chromosome_X|
-|---------------------|---------------------|
-| -Y-still to assemble- | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/YaHS/Wagyu/Chromosome_X0.png" width="550" /> |
 
 
 *2023.03.20*
@@ -495,3 +375,54 @@ location: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/polishing/
 final polished assembly.fasta -> Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.fasta
 
 #### Result
+
+| Assembly                             | Tuli_purged | Tuli_purged_polished | Wagyu_purged | Wagyu_purged_polished |
+|--------------------------------------|-------------|----------------------|--------------|-----------------------|
+| QV                                   | 41.1746     | 44.5215              | 41.1734      | 44.3003               |
+| K-mer completeness                   | 97.2915     | 93.6457              | 98.1108      | 96.6503               |
+| Number of blocks                     | 1034        | 1280                 | 1648         | 1822                  |
+| Total bases in blocks (block sum)    | 2541973861  | 2534543002           | 2656508329   | 2649199310            |
+| Smallest block size                  | 22          | 22                   | 22           | 22                    |
+| Avg. Block size                      | 2458389     | 1980112              | 1611959      | 1454006               |
+| Block N50 size                       | 16193355    | 12151121             | 8905807      | 7594324               |
+| Longest block size                   | 88307157    | 43776608             | 41396731     | 34440230              |
+| Num. of markers from other haplotype | 136413      | 133900               | 213646       | 198939                |
+| total num. of markers in block       | 64906474    | 62530878             | 47130708     | 46422800              |
+| switch error rate                    | 0.21017%    | 0.21413%             | 0.45331%     | 0.42854%              |
+
+| spectra_asm_purged | spectra_asm_purged_polished|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm_purged.fl.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm.fl_polished.png" width="550" /> |
+
+Continuity of the phasing
+
+| Tuli_purged | Tuli_purged_polished|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Tuli_flyev29_hq_purged.continuity.N.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.continuity.N.png" width="550" /> |
+
+| Wagyu_purged | Wagyu_purged_polished|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Wagyu_flyev29_hq_purged.continuity.N.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Wagyu_flyev29_hq_purged_filtered_merfinpolish_H1.continuity.N.png" width="550" /> |
+
+Phased blocks
+
+| Tuli_purged | Tuli_purged_polished|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Tuli_flyev29_hq_purged.block.N.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Tuli_flyev29_hq_purged_filtered_merfinpolish_H1.block.N.png" width="550" /> |
+
+| Wagyu_purged | Wagyu_purged_polished|
+|---------------------|---------------------|
+| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Wagyu_flyev29_hq_purged.block.N.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.Wagyu_flyev29_hq_purged_filtered_merfinpolish_H1.block.N.png" width="550" /> |
+
+Notes:
+
+Determining peak with genomescope:
+
+  As a rule of thumb, the -peak should be chosen from: \
+  - haploid peak: partially-phased (assembly has both primary and alternate haplotigs) or fully-phased assemblies (i.e. trio-binning, trio-hifiasm, ...)
+
+There is recommendation to create --fitted_hist: \
+*The lookup table can be generated with --fitted_hist option we added to GenomeScope 2.0. The probability is estimated for 0 to 4-copy kmer multiplicity and is prioritized over the estimates from -peak. Providing the fitted probability significantly improves the accuracy of all analyses.*
+
+From the paper: \
+ *In a trio setting, the optimal approach is to polish each parental assembly separately, by aligning the binned reads and performing variant calling. This will reduce the introduction of haplotype switches. However, our k-mer-based evaluation of the corrections is best performed on a combined assembly so that it faithfully represents the expected copy-number of each k-mer given the read set.*
