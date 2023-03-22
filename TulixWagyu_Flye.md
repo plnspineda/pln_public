@@ -231,7 +231,7 @@ Statistic results:
 
 Comparison on the size of chromosomes and number of contigs
 
-| Chromosomes | Tuli        | deafult_run_contigs | size      | with contig breaks? | noec_contigs | size      | size_difference | Wagyu       | deafult_run_contigs | size      | with contig breaks? | noec_contigs | size      | size_difference |
+| Chromosomes | Tuli        | df contigs | size      | with contig breaks? | noec contigs | size      | size dif | Wagyu       | df contigs | size      | with contig breaks? | noec contigs | size      | size dif |
 |-------------|-------------|---------------------|-----------|---------------------|--------------|-----------|-----------------|-------------|---------------------|-----------|---------------------|--------------|-----------|-----------------|
 | 1           | scaffold_1  | 1                   | 156401090 |                     | 1            | 156401090 | 0               | scaffold_1  | 1                   | 156450840 |                     | 1            | 156450840 | 0               |
 | 2           | scaffold_2  | 1                   | 136506533 |                     | 1            | 136506533 | 0               | scaffold_3  | 1                   | 136113000 | Yes (1)             | 1            | 136188231 | 75231           |
