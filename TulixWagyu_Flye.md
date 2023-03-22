@@ -298,11 +298,7 @@ Comparison on the size of chromosomes and number of contigs
 
 *Chromosome 12 of Wagyu has 3Mb difference between scaffolder default run and no error correction. Dotplot comparison below:
 
-| default run (with breaking) | no-error correction |
-|---------------------|---------------------|
-| <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm_purged.fl.png" width="550" /> | <img src="https://github.com/plnspineda/pln_public/blob/pln/images/polishing/QV.spectra-asm.fl_polished.png" width="550" /> |
-
-This is due to additional contigs after breaking a contig_772 (70940000bp) and contig_943 (600311)
+This is due to additional contigs after breaking a contig_772 (70Mbbp vs 71Mbbp) and contig_943 (542kb vs 600kb)
 
         scaffold_13	1	70940000	1	W	contig_772*	1	70940000	-
         scaffold_13	70940201	71103027	3	W	contig_3190*	1	162827	-
