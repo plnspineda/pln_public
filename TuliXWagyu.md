@@ -132,3 +132,27 @@ second filter
 Tuli X Wagyu hapmer blob (filter < 5)
 
 <img src="https://github.com/plnspineda/pln_public/blob/pln/images/gt5-QV.hapmers.blob.png" width="450" />
+
+
+## ONT reads
+
+| readl         | sumfreq | sumlen       | percentage_reads | percentage_len |
+|---------------|---------|--------------|------------------|----------------|
+| (0,1e+03]     | 500496  | 301137677    | 3.535255         | 0.1041491      |
+| (1e+03,1e+04] | 6181338 | 29582076342  | 43.661895        | 10.23102       |
+| (1e+04,5e+04] | 5845512 | 139231240796 | 41.289787        | 48.1534016     |
+| (5e+04,1e+05] | 1419527 | 96587542964  | 10.026832        | 33.4049939     |
+| (1e+05,Inf]   | 210410  | 23439030792  | 1.486232         | 8.1064354      |
+
+Human dataset
+  390 Gbp of data (126x coverage)
+  N50 is 58 kbp
+  219 Gbp bases in reads >50 kbp (71x)
+  longest full-length mapping read is 1.3 Mbp
+
+Tuli x Wagyu dataset
+  289 Gb of data (107x coverage)
+  N50 is 41.9 Kbp
+  120.03 Gbp in reads >50 Kbp (44.45x)
+  23.44 Gbp in reads >100 Kbp (8.68x)
+  1.48% of the reads are >100Kbp, 8.11% of the total length

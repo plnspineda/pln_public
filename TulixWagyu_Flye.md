@@ -482,3 +482,98 @@ There is recommendation to create --fitted_hist: \
 
 From the paper: \
  *In a trio setting, the optimal approach is to polish each parental assembly separately, by aligning the binned reads and performing variant calling. This will reduce the introduction of haplotype switches. However, our k-mer-based evaluation of the corrections is best performed on a combined assembly so that it faithfully represents the expected copy-number of each k-mer given the read set.*
+
+---------------------------
+
+To identify breakpoints from YaHS with default run (with error correction), will run the following:
+
+input data: scaffold.agp file and scaffold.fasta file
+
+1. get the duplicate contig in .agp file at column 6, ignoring the "200" since it's a gap
+2. if the duplicate contig starts with "1" at column 7, get the scaffold gap region after at column 3, otherwise get the scaffold region at column 2.
+3. extract the region from the scaffold fasta file, and take only column 3 + 10200bp if column 7 is "1", otherwise get column 2 + 5000bp and column 2 - 10200bp.
+4. blast the scaffold region
+5. analyse...
+
+*can't work this out...
+---------------------------
+ did this instead...
+
+        library(readr)
+        library(dplyr)
+        library(tidyr)
+
+
+        ### TULI DEFAULT RUN###
+
+        scaffold_agp_tuli <- read_delim("/home/polen/Documents/Tuli_and_Wagyu/scaffolding/default_run/Tuli-yahs.out_scaffolds_final.agp",
+                                   "\t", col_names = FALSE)
+        names(scaffold_agp_tuli) <- c("scaffold", "start", "end", "number", "categ", "contig", "con_start", "con_end", "type")
+
+        tuli_number_of_contigs_per_scaffold <- scaffold_agp_tuli %>% subset(contig != "200") %>% group_by(scaffold) %>% tally() %>% mutate(scaffold = as.numeric(gsub("scaffold_","", scaffold)))
+
+        tuli_contig_all_break <- scaffold_agp_tuli %>% subset(contig != "200") %>% group_by(contig) %>% filter(n()>1) %>% mutate(con_len = end - start)
+        tuli_contig_non_break <- scaffold_agp_tuli %>% subset(contig != "200") %>% group_by(scaffold, contig) %>% filter(n()>1)
+        tuli_contig_break <- tuli_contig_all_break %>% distinct(scaffold, contig, .keep_all = TRUE)
+
+        ### WAGYU DEFAULT RUN###
+
+        scaffold_agp_wagyu <- read_delim("/home/polen/Documents/Tuli_and_Wagyu/scaffolding/default_run/Wagyu-yahs.out_scaffolds_final.agp",
+                                   "\t", col_names = FALSE)
+        names(scaffold_agp_wagyu) <- c("scaffold", "start", "end", "number", "categ", "contig", "con_start", "con_end", "type")
+
+        wagyu_number_of_contigs_per_scaffold <- scaffold_agp_wagyu %>% subset(contig != "200") %>% group_by(scaffold) %>% tally() %>% mutate(scaffold = as.numeric(gsub("scaffold_","", scaffold)))
+
+
+        wagyu_contig_all_break <- scaffold_agp_wagyu %>% subset(contig != "200") %>% group_by(contig) %>% filter(n()>1)
+        wagyu_contig_non_break <- scaffold_agp_wagyu %>% subset(contig != "200") %>% group_by(scaffold, contig) %>% filter(n()>1)
+        wagyu_contig_break <- wagyu_contig_all_break %>% distinct(scaffold, contig, .keep_all = TRUE)
+
+
+        ##### trying again with a different approach...
+        # 1. Make table with contig name and start-end from the agp and get the scaffold name with the breaks
+        # 2. Get the whole sequence if end - begin < 50,000 else get the sequence from begin to 50,000.
+        # 3. map the sequences
+        ### result will give me a paf file with contigs aligned to the reference. I will then compare the contig that broke if the alignment is continuous in the reference
+
+        # 1. Get the contig after the break contig if begin = 1 else, get the contig before
+        # 2. map the sequences
+        ### result will give me a paf file then I will compare if the contig next to the broken contig aligned continuously with the ref
+        # analyse both files; shortest gap with the reference means the correct alignment
+
+        tuli_break_list <- tuli_contig_all_break %>%
+          mutate(con_end = as.numeric(con_end), con_start = as.numeric(con_start)) %>%
+          mutate(map_len = ifelse(con_len < 50000, NA,
+                                  ifelse(con_start == 1, as.character(con_end - 50000), as.character(con_start + 50000)))) %>%
+          mutate(map_reg = case_when(
+            con_start == 1 & con_len < 50000 ~ paste0(contig, ":", con_start, "-", con_end),
+            con_start == 1 & con_len > 50000 ~ paste0(contig, ":", map_len, "-", con_end),
+            con_start != 1 & con_len > 50000 ~ paste0(contig, ":", con_start, "-", map_len),
+            con_start != 1 & is.na(map_len) ~ paste0(contig, ":", con_start, "-", con_end),
+            con_start != 1 & con_len < 50000 ~ paste0(contig, ":", con_start, "-", map_len),
+            TRUE ~ NA_character_
+          )) %>% select(scaffold, contig, map_reg, type)
+
+        write_delim(tuli_break_list, delim = "\t", file = "/home/polen/Documents/Tuli_and_Wagyu/scaffolding/default_run/looking_at_breakpoints/fourth_attempt/tuli_break.list")
+
+        ##### looking at breakpoints with paf file
+
+        library(pafr)
+        paf <- read_paf("/home/polen/Documents/Tuli_and_Wagyu/scaffolding/default_run/looking_at_breakpoints/fourth_attempt/ARSUCD13_vs_contigbreak.paf")
+        paf_filtered <- filter_secondary_alignments(paf) %>% subset(mapq > 0)
+
+        merged_paf <- merge(paf_filtered, tuli_break_list, by.x = "qname", by.y = "map_reg", all.x = TRUE, all.y = FALSE)
+        merged_paf <- merged_paf %>%
+          select(scaffold, contig, type, qname, qlen, qstart, qend, strand, tname, tstart, tend, nmatch, alen, mapq) %>% arrange(qname, tstart) %>%
+          mutate(alen_proportion = alen/qlen*100) %>% filter(alen_proportion >= 30) #%>%
+          #group_by(qname) %>%
+          #summarise(scaffold = names(which.max(table(scaffold))), contig = names(which.max(table(contig))), min_qstart = min(qstart), max_qend = max(qend), strand = names(which.max(table(strand))),
+          #                             min_tstart = min(tstart), max_tend = max(tend), sum_nmatch = sum(nmatch), sum_alen = sum(alen), mapq = round(mean(mapq)), alen_proportion = mean(alen_proportion))
+
+
+        count_paf <- merged_paf %>% summarise(count = n_distinct(qname))
+
+        ##### locate gaps in the regions
+
+        mapped_regions <- merged_paf %>% group_by(contig) %>% mutate(diff = tstart - lag(tend, default = first(tstart)))
+        # mapped_regions <- merged_paf %>% group_by(contig) %>% mutate(diff = min_tstart - lag(max_tend, default = first(min_tstart)))
