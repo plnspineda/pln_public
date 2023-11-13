@@ -2,6 +2,15 @@ HiFiasm for T2T Tuli and Wagyu assembly
 
 Data are here: /hpcfs/groups/phoenix-hpc-avsci/Lloyd_Low/Tuli_x_Wagyu_data/assembly_contig/hifiasm/TxWHiFiTrioT2T_DoraONT40k
 
+Issues:
+
+- Dotplot can't be submitted on a server but can run on terminal # Exception in thread "main" java.lang.UnsatisfiedLinkError: /gpfs/apps/software/Java/13.0.2/lib/libfontmanager.so: /apps/software/zlib/1.2.8-GCCcore-5.4.0/lib/libz.so.1: version ZLIB_1.2.9 not found (required by /lib64/libpng16.so.16)
+- Installing own java causes font problems
+- Having error with X and Y for the contigs stats
+- Dotplot can't also run with a loop code
+- Rscript with samtools can't be run (can run on my computer but not on the server)
+
+
 Wagyu initial contig stats:
 
 | chr | contig | query_name                                      | query_length | ref_length | contig_align_proportion       | queryref_proportion | queryref_proportion_check |
